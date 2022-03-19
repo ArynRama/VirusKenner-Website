@@ -105,6 +105,7 @@ nav img{
     border-bottom: 20px solid #045089;
     border-top: 20px solid #045089;
     border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
     float: right;
     margin-bottom: 20px;
     font-size: 17px;
