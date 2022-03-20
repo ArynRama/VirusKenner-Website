@@ -71,13 +71,25 @@ nav {
 #close, #menu{
     display: none !important;
 }
-#r-h:before{
+#general-information:before{
     border-width: 35px;
     left: -50px;
 }
-#r-h:after{
+#general-information,#general-information:before,#general-information:after{
+    background-color: lightsalmon;
+}
+#general-information:after{
     border-width: 35px;
     right: -50px;
+}
+#games,#games:before,#games:after{
+    background-color: lightgreen;
+}
+#forum,#forum:before,#forum:before{
+    background-color: rgb(231, 17, 131);
+}
+#interviews,#interviews:before,#interviews:after{
+    background-color: teal;
 }
 a {
     text-decoration: none;
