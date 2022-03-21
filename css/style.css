@@ -118,7 +118,7 @@ a {
     color: black;
 }
 .fa-gradient {
-    background: -webkit-linear-gradient(#8a3ab9,#bc2a8d,#fbad50,#fccc63);
+    background: -webkit-linear-gradient(#8a3ab9,#bc2a8d,#fccc63);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
