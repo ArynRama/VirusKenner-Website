@@ -117,7 +117,10 @@ background-color: #90ee90;
     .socials {
         bottom: 2%;
     }
-    .content{
+    .content h1{
+        margin-left: 28px;
+    }
+    .content {
         margin-left: 0;
     }
 }
