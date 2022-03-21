@@ -1,0 +1,120 @@
+#general-information {
+    background-color: #ffa07a;
+}
+#general-information:before{
+    border-width: 35px;
+    left: -50px;
+    border-color: #ee926e #ee926e #ee926e transparent;
+}
+#general-information:after{
+    border-color: #ee926e transparent#ee926e #ee926e;
+    border-width: 35px;
+    right: -50px;
+}
+
+#games{
+background-color: #90ee90;
+}
+#games:before{
+    border-color:#79ec79 #79ec79 #79ec79 transparent;
+}
+#games:after{
+    border-color:#79ec79 transparent #79ec79  #79ec79;
+}
+#forum{
+    background-color: #e71183;
+}
+#forum:before{
+    border-color: #da137d #da137d #da137d transparent;
+}
+#forum:after{
+    border-color: #da137d transparent #da137d #da137d;
+}
+#interviews{background-color: teal;
+}
+#interviews:before{
+    border-color:  #007070 #007070 #007070 transparent;
+}
+#interviews:after{
+    border-color:  #007070 transparent#007070 #007070;
+}
+
+.fa-gradient {
+    background: -webkit-linear-gradient(#8a3ab9,#bc2a8d,#fccc63);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sideNav{
+    background-color: #eb89d6;
+    height: 100%;
+    width: 25%;
+    top: 0;
+    text-align: center;
+    z-index: 2;
+    background-position-x: left;
+    background-position-y: top;
+    max-width: 300px;
+    position: fixed;
+    overflow-x: hidden;
+}
+.sideNav ul li{
+    list-style: none;
+    position: relative;
+    display: list-item;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    padding:25%;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    bottom: 4.5%;
+}
+.socials {
+    width: fit-content;
+    height: auto;
+    flex-direction: row;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    bottom: 0;
+    text-decoration: none;
+}
+.fab, .fa{
+    margin: 10px
+}
+#close, #menu{
+    display: none !important;
+}
+.content{
+    margin-left: 25%;
+
+}
+@media screen and (max-width: 700px){
+    .sideNav{
+        width: 0%;
+        position: absolute;
+        transition: 1s;
+    }
+    #menu, #close{
+        padding: 4px;
+        position: absolute;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    #close{
+        display: block !important;
+        left: 82%;
+        position: absolute;
+    }
+    #menu{
+        display: block !important;
+    }
+    .socials {
+        bottom: 2%;
+    }
+}
