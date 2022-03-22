@@ -58,6 +58,7 @@ background-color: #caf2a0;
     max-width: 300px;
     position: fixed;
     overflow-x: hidden;
+    transition: 1s;
 }
 .sideNav ul li{
     list-style: none;
@@ -87,14 +88,20 @@ background-color: #caf2a0;
 .fab, .fa{
     margin: 10px
 }
-#close, #menu{
-    display: none !important;
+#menu, #close{
+    padding: 4px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 30px;
 }
-.content{
-    margin-left: 25%;
-
+#close{
+    display: block;
+    left: 82%;
+    position: absolute;
 }
-
+#menu{
+    display: block;
+}
 @media screen and (max-width: 700px){
     .sideNav{
         width: 70%;
@@ -111,12 +118,12 @@ background-color: #caf2a0;
         font-size: 30px;
     }
     #close{
-        display: block !important;
+        display: block;
         left: 82%;
         position: absolute;
     }
     #menu{
-        display: block !important;
+        display: block;
     }
     .socials {
         bottom: 2%;
