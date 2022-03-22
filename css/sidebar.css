@@ -2,18 +2,14 @@
     margin: 0;
     padding: 0;
 }
-#general-information {
+#information {
     background-color: #feba76;
 }
-#general-information:before{
-    border-width: 35px;
-    left: -50px;
+#information:before{
     border-color: #f3b271 #f3b271 #f3b271 transparent;
 }
-#general-information:after{
+#information:after{
     border-color: #f3b271 transparent#f3b271 #f3b271;
-    border-width: 35px;
-    right: -50px;
 }
 #games{
 background-color: #caf2a0;
@@ -24,13 +20,13 @@ background-color: #caf2a0;
 #games:after{
     border-color:#c4eb9a transparent #c4eb9a  #c4eb9a;
 }
-#forum{
+#discussion{
     background-color: #ff7d9b;
 }
-#forum:before{
+#discussion:before{
     border-color: #f37a96 #f37a96 #f37a96 transparent;
 }
-#forum:after{
+#discussion:after{
     border-color: #f37a96 transparent #f37a96 #f37a96;
 }
 #interviews{background-color: #4fabac;
