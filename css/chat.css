@@ -12,3 +12,9 @@
     background-color: black;
     height: 60%;
 }
+
+@media screen and (max-width: 700px) {
+    .chat_i {
+        height: 85%;
+    }
+}
