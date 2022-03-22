@@ -1,45 +1,45 @@
 #general-information {
-    background-color: #ffa07a;
+    background-color: #feba76;
 }
 #general-information:before{
     border-width: 35px;
     left: -50px;
-    border-color: #ee926e #ee926e #ee926e transparent;
+    border-color: #f3b271 #f3b271 #f3b271 transparent;
 }
 #general-information:after{
-    border-color: #ee926e transparent#ee926e #ee926e;
+    border-color: #f3b271 transparent#f3b271 #f3b271;
     border-width: 35px;
     right: -50px;
 }
 
 #games{
-background-color: #90ee90;
+background-color: #caf2a0;
 }
 #games:before{
-    border-color:#79ec79 #79ec79 #79ec79 transparent;
+    border-color:#c4eb9a #c4eb9a #c4eb9a transparent;
 }
 #games:after{
-    border-color:#79ec79 transparent #79ec79  #79ec79;
+    border-color:#c4eb9a transparent #c4eb9a  #c4eb9a;
 }
 #forum{
-    background-color: #e71183;
+    background-color: #ff7d9b;
 }
 #forum:before{
-    border-color: #da137d #da137d #da137d transparent;
+    border-color: #f37a96 #f37a96 #f37a96 transparent;
 }
 #forum:after{
-    border-color: #da137d transparent #da137d #da137d;
+    border-color: #f37a96 transparent #f37a96 #f37a96;
 }
-#interviews{background-color: teal;
+#interviews{background-color: #4fabac;
 }
 #interviews:before{
-    border-color:  #007070 #007070 #007070 transparent;
+    border-color:  #48a0a1 #48a0a1 #48a0a1 transparent;
 }
 #interviews:after{
-    border-color:  #007070 transparent#007070 #007070;
+    border-color:  #48a0a1 transparent#48a0a1 #48a0a1;
 }
 
-.fa-gradient {
+.fa-gradient{
     background: -webkit-linear-gradient(#8a3ab9,#bc2a8d,#fccc63);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -47,7 +47,7 @@ background-color: #90ee90;
     -webkit-text-fill-color: transparent;
 }
 .sideNav{
-    background-color: #eb89d6;
+    background-color: #ebb6c2 ;
     height: 100%;
     width: 25%;
     top: 0;
