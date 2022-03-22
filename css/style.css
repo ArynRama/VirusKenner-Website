@@ -21,10 +21,17 @@ a {
 .content{
     background-color: transparent;
     height: auto;
-    width: 100%;
+    width: 97%;
     position: absolute;
+    text-align: left;
+    padding-left: 20px;
 }
-
+.content h1{
+    text-align: center;
+}
+.content h2{
+    text-align: center;
+}
 @media screen and (max-width: 700px) {
     .background {
         url:
