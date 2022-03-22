@@ -21,7 +21,7 @@ html {
 }
 
 aside {
-  margin: 20px 0;
+  margin: 20px 0 !important;
   line-height: 34px;
   position: relative;
   cursor: pointer;

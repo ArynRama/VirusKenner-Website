@@ -1,3 +1,7 @@
+.sideNav * {
+    margin: 0;
+    padding: 0;
+}
 #general-information {
     background-color: #feba76;
 }
@@ -11,7 +15,6 @@
     border-width: 35px;
     right: -50px;
 }
-
 #games{
 background-color: #caf2a0;
 }
@@ -102,6 +105,15 @@ background-color: #caf2a0;
 }
 #menu{
     display: block;
+    position: fixed;
+    z-index: 1;
+    color: black;
+}
+.logo{
+    width: auto;
+    height: 15%;
+    padding: 15px;
+    padding-top: 30px;
 }
 @media screen and (max-width: 700px){
     .sideNav{
