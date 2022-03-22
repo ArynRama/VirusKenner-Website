@@ -21,23 +21,23 @@ a {
 .content{
     background-color: transparent;
     height: auto;
-    width: 97%;
     position: absolute;
     text-align: left;
     padding-left: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 .content h1{
     text-align: center;
     color: white;
     background-color: rgb(14, 70, 255);
-    background-size: 30%;
     margin-block-start: 0;
-    height: 7.5%;
+    height: 58px;
     margin-block-end: 0;
     margin-block-start: 0;
-}
-.content h2{
-    text-align: center;
 }
 
 @media screen and (max-width: 700px) {
