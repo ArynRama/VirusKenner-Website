@@ -1,0 +1,17 @@
+.chat {
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 60%;
+    height: auto;
+    min-width: 15%;
+    max-width: 70%;
+    background-color: black;
+    background: black;
+    z-index: 2;
+    margin: 5%;
+}
+.chat_i {
+    margin: 5%;
+}
