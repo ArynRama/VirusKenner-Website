@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="./css/all.css">
 <link rel="stylesheet" href="./css/ribbon.css">
 <link rel="stylesheet" href="./css/sidebar.css">
+<script id="dsq-count-scr" src="//youth-against-hiv.disqus.com/count.js" async></script>
+<link rel="stylesheet" href="./css/chat.css">
 
 <head>
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +20,7 @@
         <ul class="nav">
             <li><aside id="information" class='ribbon'><a href="info.html">Information</a></aside></li>
             <li><aside id="games"class='ribbon'><a href="games.html">Games</a></aside></li>
-            <li><aside id="forum"class='ribbon'><a href="forum.html">Forum</a></aside></li>
+            <li><aside id="discussion"class='ribbon'><a href="discussion.html">Discussion</a></aside></li>
             <li><aside id="interviews"class='ribbon'><a href="interviews.html">Interviews</a></aside></li>
         </ul>
         <ul class="socials">
@@ -29,7 +31,17 @@
     </div>
     <i id="menu" onclick="showMenu()" class="fa fa-bars"></i>
     <img class='background' id='background' src="./img/background.png">
-    <div class="content">
-        <h1> Forum</h1>
+    <div class="content chat">
+        <h1>Discussion</h1>
+        <div class="chat_i" id="disqus_thread"></div>
     </div>
 </body>
+<script>
+    (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://youth-against-hiv.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
