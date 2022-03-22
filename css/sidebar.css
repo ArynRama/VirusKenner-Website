@@ -94,12 +94,15 @@ background-color: #90ee90;
     margin-left: 25%;
 
 }
+
 @media screen and (max-width: 700px){
     .sideNav{
         width: 70%;
         position: absolute;
         transition: 1s;
         left: -300px;
+        position: fixed;
+        overflow-x: hidden;
     }
     #menu, #close{
         padding: 4px;
@@ -118,7 +121,6 @@ background-color: #90ee90;
     .socials {
         bottom: 2%;
     }
-
     .content {
         margin-left: 0;
     }
