@@ -50,7 +50,7 @@ background-color: #caf2a0;
     background-color: #ebb6c2 ;
     height: 100%;
     width: 25%;
-    top: 0;
+    top: -300px;
     text-align: center;
     z-index: 2;
     background-position-x: left;
