@@ -95,6 +95,9 @@ background-color: #caf2a0;
     color: white;
     -webkit-text-stroke: black 2px;
 }
+#insta{
+    -webkit-text-stroke: black 0.5px;
+}
 #menu, #close{
     padding: 4px;
     position: absolute;
