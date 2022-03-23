@@ -88,6 +88,9 @@ background-color: #caf2a0;
 .fab, .fa{
     margin: 10px;
 }
+#insta{
+    -webkit-text-stroke: black 0.5px;
+}
 #tiktok{
     color: white;
     -webkit-text-stroke: black 2px;
