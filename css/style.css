@@ -28,16 +28,26 @@ a {
     width: 100%;
     height: 100%;
     margin: 0;
+    top: 58px;
     padding: 0;
 }
-.content h1{
+.header {
+    position: fixed;
+    height: 58px;
+    width: 100%;
+    content: center;
+    z-index: 1;
+}
+.header h1{
     text-align: center;
     color: white;
-    background-color: rgb(14, 70, 255);
+    background-color: #ebb6c2;
     margin-block-start: 0;
     height: 58px;
     margin-block-end: 0;
     margin-block-start: 0;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 @media screen and (max-width: 700px) {
