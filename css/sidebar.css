@@ -86,7 +86,11 @@ background-color: #caf2a0;
     text-decoration: none;
 }
 .fab, .fa{
-    margin: 10px
+    margin: 10px;
+}
+#tiktok{
+    color: white;
+    -webkit-text-stroke: black 2px;
 }
 #menu, #close{
     padding: 4px;
