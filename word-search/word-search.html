@@ -64,7 +64,8 @@
         "AIDS",
         "INJECTION",
         "MEASURES"
-    ]
+    ].map(word => WordFindGame.insertWordBefore($('#add-word').parent(), word));
+    $('#secret-word').val();
 
     /* Init */
     function recreate() {
