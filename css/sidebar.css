@@ -122,7 +122,6 @@ background-color: #caf2a0;
     }
     #menu, #close{
         padding: 4px;
-        position: absolute;
         cursor: pointer;
         font-size: 30px;
     }
@@ -133,6 +132,7 @@ background-color: #caf2a0;
     }
     #menu{
         display: block;
+        position: fixed;
     }
     .socials {
         bottom: 2%;
