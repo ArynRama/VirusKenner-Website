@@ -42,11 +42,6 @@
 
         $(el).html(output);
     };
-
-    var getWords = function () {
-        return $('input.word').toArray().map(wordEl => wordEl.value.toLowerCase()).filter(word => word);
-    };
-
     /**
     * Given two points, ensure that they are adjacent and determine what
     * orientation the second point is relative to the first
@@ -247,7 +242,28 @@
         $('input.word').removeClass('wordFound');
 
         // Class properties, game initial config:
-        wordList = getWords().sort();
+        wordList = [
+            "Immunodeficiency",
+            "Infection",
+            "Transmission",
+            "Immunesystem",
+            "Vaginalfluids",
+            "Macrophages",
+            "Aware",
+            "Intercourse",
+            "Semen",
+            "Antibody",
+            "Syringe",
+            "Breastmilk",
+            "Blood",
+            "Sex",
+            "Condom",
+            "Hypertcells",
+            "Prep",
+            "Aids",
+            "Injection",
+            "Measures"
+        ];
         puzzle = wordfind.newPuzzleLax(wordList, options);
 
         // Draw all of the words

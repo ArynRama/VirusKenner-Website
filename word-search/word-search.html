@@ -12,29 +12,14 @@
     <div id="main" role="main">
         <div id="puzzle"></div>
         <ul id="words">
-            <li><button id="add-word">Add word</button></li>
+            <li><a id="add-word"></a></li>
         </ul>
         <fieldset id="controls">
-            <label for="allowed-missing-words">Allowed missing words :
-                <input id="allowed-missing-words" type="number" min="0" max="5" step="1" value="2">
-            </label>
-            <label for="max-grid-growth">Max grid growth :
-                <input id="max-grid-growth" type="number" min="0" max="5" step="1" value="0">
-            </label>
             <label for="extra-letters">Extra letters :
-                <select id="extra-letters">
-                    <option value="secret-word" selected>form a secret word</option>
-                    <option value="none">none, allow blanks</option>
-                    <option value="secret-word-plus-blanks">form a secret word but allow for extra blanks</option>
-                    <option value="random">random</option>
-                </select>
             </label>
-            <label for="secret-word">Secret word :
-                <input id="secret-word">
-            </label>
-            <button id="create-grid">Create grid</button>
+            <button id="create-grid">Start</button>
             <p id="result-message"></p>
-            <button id="solve">Solve Puzzle</button>
+            <button id="solve">Give Up</button>
         </fieldset>
     </div>
 
@@ -42,56 +27,49 @@
     <script type="text/javascript" src="wordfind.js"></script> 
     <script type="text/javascript" src="wordfindgame.js"></script> 
     <script>
-    /* Example words setup */
     [
-        "IMMUNODEFICIENCY",
-        "INFECTION",
-        "TRANSMISSION",
-        "IMMUNESYSTEM",
-        "VAGINALFLUIDS",
-        "MACROPHAGES",
-        "AWARE",
-        "INTERCOURSE",
-        "SEMEN",
-        "ANTIBODY",
-        "SYRINGE",
-        "BREASTMILK",
-        "BLOOD",
-        "SEX",
-        "CONDOM",
-        "HyperTCELLS",
-        "PREP",
-        "AIDS",
-        "INJECTION",
-        "MEASURES"
-    ].map(word => WordFindGame.insertWordBefore($('#add-word').parent(), word));
-    $('#secret-word').val();
+            "Immunodeficiency",
+            "Infection",
+            "Transmission",
+            "Immunesystem",
+            "Vaginalfluids",
+            "Macrophages",
+            "Aware",
+            "Intercourse",
+            "Semen",
+            "Antibody",
+            "Syringe",
+            "Breastmilk",
+            "Blood",
+            "Sex",
+            "Condom",
+            "Hypertcells",
+            "Prep",
+            "Aids",
+            "Injection",
+            "Measures"
+        ].map(word => WordFindGame.insertWordBefore($('#add-word').parent(), word));
 
     /* Init */
     function recreate() {
         $('#result-message').removeClass();
         var fillBlanks, game;
-        if ($('#extra-letters').val() === 'none') {
-            fillBlanks = false;
-        } else if ($('#extra-letters').val().startsWith('secret-word')) {
-            fillBlanks = $('#secret-word').val();
-        }
         try {
             game = new WordFindGame('#puzzle', {
-                allowedMissingWords: +$('#allowed-missing-words').val(),
-                maxGridGrowth: +$('#max-grid-growth').val(),
+                allowedMissingWords: 0,
+                maxGridGrowth: 20,
                 fillBlanks: fillBlanks,
-                allowExtraBlanks: ['none', 'secret-word-plus-blanks'].includes($('#extra-letters').val()),
+                allowExtraBlanks: 'random',
                 maxAttempts: 100,
             });
         } catch (error) {
-            $('#result-message').text(`😞 ${error}, try to specify less ones`).css({color: 'red'});
+            $('#result-message').text(`${error}, try to specify less ones`).css({color: 'red'});
             return;
         }
         wordfind.print(game);
         if (window.game) {
             var emptySquaresCount = WordFindGame.emptySquaresCount();
-            $('#result-message').text(`😃 ${emptySquaresCount ? 'but there are empty squares' : ''}`).css({color: ''});
+            $('#result-message').text(`${emptySquaresCount ? 'but there are empty squares' : ''}`).css({color: ''});
         }
         window.game = game;
     }
