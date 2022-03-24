@@ -59,30 +59,35 @@ p{
     padding-left: 15px;
 }
 #HeaderWhatisHIV{
-    color: rgb(88, 10, 190);
+    color: #580abe;
 }
 #Headerstage1{
-    color:#f50aa7
+    color:#f50aa7;
 }
 #Headerstage2{
-    color:#ee0c88
+    color:#ee0c88;
 }
 #Headerstage3{
-    color:#ee0c57
+    color:#ee0c57;
 }
 #Headercauses{
     color: #ff8800;
 }
 #Headereffects{
-    color:#93e70a
+    color:#93e70a;
 }
 #Headerpreventions{
     color:#e61e50
 }
 #Headerhistory{
-    color:#0a8181
+    color:#0a8181;
 }
-
+#word-search{
+    position: absolute;
+    left:250px;
+    top:100px;
+    font-size: larger;
+}
 
 @media screen and (max-width: 700px) {
 }
