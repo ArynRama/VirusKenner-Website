@@ -1,7 +1,6 @@
 h1 {
   text-align: center; /* to center #puzzle on small devices */
 }
-
 #main {
   margin: 0 auto;
   max-width: 80rem;
@@ -38,13 +37,24 @@ h1 {
 }
 @media only screen and (min-width: 600px) {
   #puzzle {
-    float: left;
+    top: 0;
+    left: 0;
     padding: 1rem;
   }
   .puzzleSquare {
-    height: 3.5rem;
-    width: 3.5rem;
-    font: 2.5rem sans-serif;
+    height: 2.76vw;
+    width: 2.76vw;
+    font: 2.3vw sans-serif;
+  }
+  #words{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    height: 100%;
   }
 
 button::-moz-focus-inner {
@@ -100,8 +110,11 @@ button::-moz-focus-inner {
   background-color: transparent;
 }
 #words {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(182, 182, 182);
   border: 1px black;
+  padding: 5px
 }
 
 /* indicates that the word has been found */
@@ -126,23 +139,12 @@ label {
 }
 input {
   border: none;
-  border-bottom: 1px solid #ccc;
   font-size: 1em;
-}
-input[type="number"] {
-  width: 2rem;
-}
-select {
-  max-width: 10rem;
 }
 #create-grid, #solve {
   display: block;
   margin-top: 1rem;
 }
-#secret-word {
-  text-transform: uppercase;
-}
-
 #result-message {
   font-size: 1.2em;
 }

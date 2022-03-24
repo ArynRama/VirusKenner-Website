@@ -42,6 +42,7 @@
 
         $(el).html(output);
     };
+
     /**
     * Given two points, ensure that they are adjacent and determine what
     * orientation the second point is relative to the first
@@ -319,7 +320,7 @@
 
     // Static method
     WordFindGame.insertWordBefore = function (el, word) {
-        $('<li><input class="word" value="' + (word || '') + '"></li>').insertBefore(el);
+        $('<li><input class="word" readonly value="' + (word || '') + '"></li>').insertBefore(el);
     };
 
 

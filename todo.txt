@@ -3,12 +3,13 @@ Essential{
     interviews adden
     Home screen maken
 }
-    Problems{
-        Header mobile fixen
-        hele ribbon laten gaan naar wat je wilt
-        height veranderen van games/interviews en discuss (omdat je kan scrollen voor niks)
-    }
-    design{
-        fotos inserten die kaya,jewel en desi hebben gemaakt
-    }
+Problems{
+    Header mobile fixen
+    hele ribbon laten gaan naar wat je wilt
+    height veranderen van games/interviews en discuss (omdat je kan scrollen voor niks)
+}
+design{
+    fotos inserten die kaya,jewel en desi hebben gemaakt
+    word search screen beter maken
+}
     
