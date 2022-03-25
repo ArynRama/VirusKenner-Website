@@ -84,9 +84,26 @@ p{
 }
 #wordsearch{
     position: absolute;
-    left:250px;
-    top:100px;
+    left:400px;
+    top:130px;
     font-size: larger;
+    color:#10be99;
+    -webkit-text-stroke: black 0.1px;
+
+}
+#factorcap{
+    position: absolute;
+    right:400px;
+    top:130px;
+    font-size: larger;
+    -webkit-text-stroke: black 0.1px;
+}
+.fa-gradientfactorcap{
+    background: -webkit-linear-gradient(#cf0707, #0ce20c);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 700px) {
 }
