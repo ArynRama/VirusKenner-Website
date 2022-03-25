@@ -105,6 +105,20 @@ p{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+#groupfoto{
+    position:absolute;
+    height:500px;
+    width:auto;
+    right: 40px;
+    top: 100px;
+}
+#behindthescenes1{
+    position: absolute;
+    height:auto;
+    width:500px;
+    left: 40px;
+    top: 900px;
+}
 @media screen and (max-width: 700px) {
 }
 
