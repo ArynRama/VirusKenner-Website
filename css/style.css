@@ -99,6 +99,9 @@ p{
 #Headerhistory{
     color:#0a8181;
 }
+#Headerstatistics{
+    color: #0ad2f5;
+}
 .games #wordsearch{
     position: absolute;
     left:350px;
@@ -164,6 +167,11 @@ p{
 .Answers{
     text-align: left;
     margin-left: 45px;
+}
+.intro{
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 720px;
 }
 @media screen and (max-width: 700px) {
 }
