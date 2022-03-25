@@ -1,7 +1,7 @@
 Essential{
     interviews adden (film blurren)
         -videos
-        -typed out
+        ~-typed out~
     statistics doen
 
     Home screen maken
@@ -21,5 +21,6 @@ Problems{
 }
 design{
     word search screen beter maken
+    game page
 }
     

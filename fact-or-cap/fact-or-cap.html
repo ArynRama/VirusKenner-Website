@@ -1,62 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
-    <link rel="stylesheet" type="text/css" href="fact-or-cap.css">
-    <link href="../css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script src="../js/javascript.js"></script>
-    <link rel="stylesheet" href="../css/all.css">
-    <link rel="stylesheet" href="../css/ribbon.css">
-    <link rel="stylesheet" href="../css/sidebar.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="fact-or-cap.js"></script> 
-    <head>
-        <title>Youth Against HIV: Fact Or Cap</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-    </head>
-    <body onload="onLoad()">
-        <div class="sideNav" id="sideNav">
-            <i id="close" onclick="hideMenu()" class="fa fa-times"></i>
-            <a class="logo" href="../index.html"><img class="logo" src="../img/logo.png"></a>
-            <ul class="nav">
-                <li><a href="../info.html"><aside id="information" class='ribbon'>Information</aside></a></li>
-                <li><a href="../games.html"><aside id="games"class='ribbon'>Games</aside></a></li>
-                <li><a href="../interviews.html"><aside id="interviews"class='ribbon'>Interviews</aside></a></li>
-            </ul>
-            <ul class="socials">
-                <li><a id="insta"class="fa-gradient fab fa-instagram fa-2x" href="https://instagram.com/youth.against.hiv"></a></li>
-                <li><a id="tiktok"class="fab fa-tiktok fa-2x" href="https://www.tiktok.com/@youth.against.hiv"></a></li>
-                <li><a id="email"class="fa fa-envelope fa-2x" href="mailto: youth.against.hiv22@gmail.com"></a></li>
-            </ul>
-        </div>
-        <img class='background' id='background' src="../img/background.png">
-        <div class="header">
-            <i id="menu" onclick="showMenu()" class="fa fa-bars"></i>
-            <h1>Games: Fact Or Cap</h1>
-        </div>
-        <div class="content">
-            <div id="factorcap">
-                <p id="prompt"></p>
-            </div>
-            <img id="cloud" src="img/fact-or-cap-cloud.png">
-            <div id="explination">
-                <p>You have 15 seconds to choose fact or cap on as many promts as you can.</p>
-            </div>
-            <img id="Fact" src="./img/fact-button.png"></img>
-            <img id="Cap" src="./img/cap-button.png"></img>
-            <div id="end_messages">
-                <p id="end_message1"></p>
-                <p id="end_message2"></p>
-                <p id="end_message3"></p>
-            </div>
-            <button class="button" onclick="start()" id="playButton">Start</button>
-            <button class="button" onclick="restart()" id="playAgainButton">Retry</button>
-            <div id="timer"><p id="time-display">0:<span id="time"></span></p></div>
-        </div>
-    
-    </body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="fact-or-cap.css">
+	<link href="../css/style.css" rel="stylesheet">
+	<script src="../js/javascript.js"></script>
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/ribbon.css">
+	<link rel="stylesheet" href="../css/sidebar.css">
+	<script type="text/javascript" src="fact-or-cap.js"></script> 
+	<head>
+		<title>Youth Against HIV: Fact Or Cap</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	</head>
+	<body onload="onLoad()">
+		<div class="sideNav" id="sideNav">
+			<i id="close" onclick="hideMenu()" class="fa fa-times"></i>
+			<a class="logo" href="../index.html"><img class="logo" src="../img/logo.png"></a>
+			<ul class="nav">
+				<li>
+					<a href="../info.html">
+						<aside id="information" class='ribbon'>Information</aside>
+					</a>
+				</li>
+				<li>
+					<a href="../games.html">
+						<aside id="games"class='ribbon'>Games</aside>
+					</a>
+				</li>
+				<li>
+					<a href="../interviews.html">
+						<aside id="interviews"class='ribbon'>Interviews</aside>
+					</a>
+				</li>
+			</ul>
+			<ul class="socials">
+				<li><a id="insta"class="fa-gradient fab fa-instagram fa-2x" href="https://instagram.com/youth.against.hiv"></a></li>
+				<li><a id="tiktok"class="fab fa-tiktok fa-2x" href="https://www.tiktok.com/@youth.against.hiv"></a></li>
+				<li><a id="email"class="fa fa-envelope fa-2x" href="mailto: youth.against.hiv22@gmail.com"></a></li>
+			</ul>
+		</div>
+		<img class='background' id='background' src="../img/background.png">
+		<div class="header">
+			<i id="menu" onclick="showMenu()" class="fa fa-bars"></i>
+			<h1>Games: Fact Or Cap</h1>
+		</div>
+		<div class="content">
+			<div id="factorcap">
+				<p id="prompt"></p>
+			</div>
+			<img id="cloud" src="img/fact-or-cap-cloud.png">
+			<div id="explination">
+				<p>You have 25 seconds to choose fact or cap on as many prompts as you can.</p>
+			</div>
+			<img id="Fact" src="./img/fact-button.png"></img>
+			<img id="Cap" src="./img/cap-button.png"></img>
+			<div id="end_messages">
+				<p id="end_message1"></p>
+				<p id="end_message2"></p>
+				<p id="end_message3"></p>
+			</div>
+			<button class="button" onclick="start()" id="playButton">Start</button>
+			<button class="button" onclick="restart()" id="playAgainButton">Retry</button>
+			<div id="timer">
+				<p id="time-display">0:<span id="time"></span></p>
+			</div>
+		</div>
+	</body>
 </html>

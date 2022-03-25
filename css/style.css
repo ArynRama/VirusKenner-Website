@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@1,300&display=swap');
+
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -44,13 +46,22 @@ a {
 .header h1{
     text-align: center;
     color: #ffffff;
-    background-color: #ebb6c2;
     margin-block-start: 0;
     height: 58px;
     margin-block-end: 0;
     margin-block-start: 0;
     -webkit-text-stroke: black 0.1px;
     font-family: 'Permanent Marker', cursive;
+}
+@media screen and (max-width:700px){
+    .header {
+        height: 15%;
+        background-color: #ebb6c2;
+    }
+    .content{
+        height: 85%;
+        bottom: 0;
+    }
 }
 h2,h3{
     text-align: center;
@@ -83,7 +94,7 @@ p{
 #Headerhistory{
     color:#0a8181;
 }
-#wordsearch{
+.games #wordsearch{
     position: absolute;
     left:350px;
     top:130px;
@@ -98,8 +109,6 @@ p{
     top:130px;
     font-size: 30px;
     -webkit-text-stroke: black 0.1px;
-}
-.fa-gradientfactorcap{
     background: -webkit-linear-gradient(#7e0404, #0ce20c);
     -webkit-background-clip: text;
     -moz-background-clip: text;

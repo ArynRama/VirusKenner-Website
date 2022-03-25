@@ -1,5 +1,5 @@
 var timer;
-const timeLeft = 15; // seconds
+const timeLeft = 20; // seconds
 var score_tot = 1;
 var score_corect = 0;
 const facts = [
