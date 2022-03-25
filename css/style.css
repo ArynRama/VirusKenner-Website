@@ -33,6 +33,7 @@ a {
     top: 58px;
     padding: 0;
     font-family:'Poppins', sans-serif;
+    z-index: 0;
 }
 .header {
     position: fixed;
@@ -57,6 +58,7 @@ h2,h3{
 }
 p{
     padding-left: 15px;
+    text-align: justify;
 }
 #HeaderWhatisHIV{
     color: #c158d6;
@@ -119,6 +121,30 @@ p{
     left: 40px;
     top: 900px;
 }
+#africa{
+    position: absolute;
+    height: 230px;
+    width: auto;
+    left: 90px;
+    margin: 1px;
+    z-index: 0;
+}
+#stages{
+    position: absolute;
+    height: 230px;
+    width: auto;
+    left: 90px;
+    margin: 1px;
+    z-index: 0;
+}
+#whitebloodcells{
+    position: absolute;
+    height: 90px;
+    width: auto;
+    margin: 1px;
+    z-index: 0;
+}
+
 @media screen and (max-width: 700px) {
 }
 
