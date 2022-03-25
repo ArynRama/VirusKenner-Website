@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +16,6 @@
     <link rel="stylesheet" href="../css/sidebar.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
     <script type="text/javascript" src="fact-or-cap.js"></script> 
 </head>
 <body onload="onLoad()">
@@ -41,6 +41,11 @@
     </div>
     <div class="content">
         <img id="cloud" src="img/fact-or-cap-cloud.png">
+        <div id="explination">
+            <p>You have 15 seconds to choose fact or cap on as many promts as you can.</p>
+        </div>
+        <button onclick="start()" id="playAgainButton">Start</button>
+        <div id="timer"><p id="time-display">0:<span id="time"></span></p></div>
     </div>
 
 </body>

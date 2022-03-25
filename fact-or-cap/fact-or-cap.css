@@ -1,4 +1,96 @@
 #cloud{
+    position: absolute;
     width: auto;
     height: 90%;
+    left: 0;
+    right: 0;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10%;
+}
+
+
+#timeleft {
+    display: none;
+}
+#explination{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    top: 35%;
+    text-align: center;
+}
+#explination p{
+    color: rgb(255, 0, 0);
+}
+#timer {
+    display: none;
+    border: 3px black solid;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    align-content: center;
+    width: 5%;
+    height: 4%;
+    top: 30px;
+}
+#time-display {
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#playAgainButton {
+    position: absolute;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 47%;
+    width: 10%;
+    height: 5%;
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+#playAgainButton:hover,
+#playAgainButton:focus { 
+    color: #ffffff;
+    background-color: #16437E;
+}
+
+#playAgainButton:active {
+    color: rgb(255, 255, 255, .7);
+    background: #09223b;
 }
