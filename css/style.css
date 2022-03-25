@@ -84,18 +84,18 @@ p{
 }
 #wordsearch{
     position: absolute;
-    left:400px;
+    left:350px;
     top:130px;
-    font-size: larger;
+    font-size: 30px;
     color:#10be99;
     -webkit-text-stroke: black 0.1px;
 
 }
 #factorcap{
     position: absolute;
-    right:400px;
+    right:350px;
     top:130px;
-    font-size: larger;
+    font-size: 30px;
     -webkit-text-stroke: black 0.1px;
 }
 .fa-gradientfactorcap{
