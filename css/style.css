@@ -42,6 +42,7 @@ a {
     width: 100%;
     content: center;
     z-index: 1;
+    background-color: #ebb6c2;
 }
 .header h1{
     text-align: center;
