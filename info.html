@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
 <link href="./css/style.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,15 +14,14 @@
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youth Against HIV</title>
 </head>
-<body>
+<body onload="onLoad()">
     <div class="sideNav" id="sideNav">
         <i id="close" onclick="hideMenu()" class="fa fa-times"></i>
         <a class="logo" href="index.html"><img class="logo" src="./img/logo.png"></a>
         <ul class="nav">
-            <li><aside id="information" class='ribbon'><a href="info.html">Information</a></aside></li>
-            <li><aside id="games"class='ribbon'><a href="games.html">Games</a></aside></li>
-            <li><aside id="discussion"class='ribbon'><a href="discussion.html">Discussion</a></aside></li>
-            <li><aside id="interviews"class='ribbon'><a href="interviews.html">Interviews</a></aside></li>
+            <li><a href="../info.html"><aside id="information" class='ribbon'>Information</aside></a></li>
+            <li><a href="../games.html"><aside id="games"class='ribbon'>Games</aside></a></li>
+            <li><a href="../interviews.html"><aside id="interviews"class='ribbon'>Interviews</aside></a></li>
         </ul>
         <ul class="socials">
             <li><a id="insta"class="fa-gradient fab fa-instagram fa-2x" href="https://instagram.com/youth.against.hiv"></a></li>

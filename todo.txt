@@ -1,5 +1,4 @@
 Essential{
-    Fact or cap maken
     interviews adden (film blurren)
         -videos
         -typed out
@@ -15,16 +14,12 @@ Essential{
 }
 Problems{
     Header mobile fixen
-    hele ribbon laten gaan naar wat je wilt
-    height veranderen van games/interviews en discuss (omdat je kan scrollen voor niks)
-    mobile background img is niet geadd voor mobile
     die fotos van ons zijn beetje broko op mobile
     die fotos zijn in text
     die afrika hoort bij history en niet bij statistics
     die general info is nu helemaal tot einde van screen weer en interviews ook
 }
 design{
-    fotos inserten die kaya,jewel en desi hebben gemaakt
     word search screen beter maken
 }
     
