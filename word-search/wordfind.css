@@ -52,9 +52,17 @@ h1 {
     right: 0;
     width: 20%;
     padding: 0;
-    margin: 0;
+    margin: 10px;
     margin-bottom: 10px;
     height: 13*2.76vw;
+  }
+  #words li:not(:last-child) {
+    padding-top: 0.01px;
+    padding-bottom: 0.01px;
+  }
+  #words li input{
+    padding-top: 0.01px;
+    padding-bottom: 0.01px;
   }
 
 button::-moz-focus-inner {
@@ -85,13 +93,6 @@ button::-moz-focus-inner {
 /**
 * Styles for the word list
 */
-#words{
-  display: inline-block;
-  max-width: 30rem;
-  padding: 1em;
-  list-style-type: none;
-  text-align: left;
-}
 @media only screen and (min-width: 600px) {
   #words {
     -moz-column-count: 2;
@@ -102,16 +103,19 @@ button::-moz-focus-inner {
 }
 
 #words li {
-  padding: 3px 0;
+  padding: 3px;
   font-size: 1em;
   font-family: 'Poppins', sans-serif;
 }
 #words *{
   background-color: transparent;
 }
-#words {
-  display: flex;
-  flex-direction: column;
+#words{
+  display: inline-block;
+  max-width: 30rem;
+  padding: 1em;
+  list-style-type: none;
+  text-align: left;
   background-color: rgb(182, 182, 182);
   border: 1px black;
   padding: 5px
