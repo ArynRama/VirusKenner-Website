@@ -472,7 +472,8 @@
                         notFound.push(word);
                     }
                 }
-
+                $('#solve').hide();
+                $('#create-grid').show();
                 return { found: found, notFound: notFound };
             },
 
