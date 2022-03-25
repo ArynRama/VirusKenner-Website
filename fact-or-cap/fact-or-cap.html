@@ -44,7 +44,13 @@
         <div id="explination">
             <p>You have 15 seconds to choose fact or cap on as many promts as you can.</p>
         </div>
-        <button onclick="start()" id="playAgainButton">Start</button>
+        <div id="end_messages">
+            <p id="end_message1"></p>
+            <p id="end_message2"></p>
+            <p id="end_message3"></p>
+        </div>
+        <button class="button" onclick="start()" id="playButton">Start</button>
+        <button class="button" onclick="restart()" id="playAgainButton">Retry</button>
         <div id="timer"><p id="time-display">0:<span id="time"></span></p></div>
     </div>
 
