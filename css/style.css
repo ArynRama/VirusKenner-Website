@@ -92,7 +92,7 @@ p{
     -webkit-text-stroke: black 0.1px;
 
 }
-#factorcap{
+.games #factorcap{
     position: absolute;
     right:350px;
     top:130px;
