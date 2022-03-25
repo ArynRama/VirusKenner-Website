@@ -3,10 +3,14 @@ Essential{
     interviews adden (film blurren)
         -videos
         -typed out
+    statistics doen
+
     Home screen maken
         -fotos van ons
         -behind the scenes
-    discussion removen?
+        -introduction over ons geven
+    discussion veranderen naar link met stichting lobby
+    
     
 }
 Problems{
@@ -14,6 +18,9 @@ Problems{
     hele ribbon laten gaan naar wat je wilt
     height veranderen van games/interviews en discuss (omdat je kan scrollen voor niks)
     mobile background img is niet geadd voor mobile
+    die fotos van ons zijn beetje broko op mobile
+    die fotos zijn in text
+    die afrika hoort bij history en niet bij statistics
 }
 design{
     fotos inserten die kaya,jewel en desi hebben gemaakt
