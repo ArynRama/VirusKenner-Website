@@ -44,6 +44,10 @@ a {
     z-index: 1;
     background-color: #ebb6c2;
 }
+#info .content {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .header h1{
     text-align: center;
     color: #ffffff;
