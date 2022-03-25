@@ -2,9 +2,21 @@ var timer;
 const timeLeft = 15; // seconds
 var score_tot = 1;
 var score_corect = 0;
-// What to do when the timer runs out
+const facts = [
+    "Cap HIV reproduces outside the human body.",
+    "Cap HIV can be contracted through air.",
+    "Cap once you are infected with HIV, you will definitely get aids.",
+    "Cap HIV can be passed on from one person to another by shaking hands.",
+    "Cap There is a cure for HIV.",
+    "Fact HIV stands for Human Immunodeficiency Virus.",
+    "Fact AIDS is the last stage of HIV.",
+    "Fact 1.4 percent of the population in Suriname has HIV.",
+    "Fact There is no vaccine to prevent HIV .",
+    "Fact You can have HIV and not know it.",
+    "Fact You can contract HIV through a blood transfusion.",
+];
+
 function gameOver() {
-    // This cancels the setInterval, so the updateTimer stops getting called
     $('#playAgainButton').show();
     $('#cloud').hide();
     $('#timer').hide();
@@ -20,60 +32,71 @@ function gameOver() {
     }
     $('#end_message1').html(`You have ${score_corect} correct out of ${score_tot}.`);
     $('#end_messages').show();
-    // re-show the button, so they can start it again
+    $('#factorcap').hide();
 }
 
 function updateTimer() {
     time = time - 1;
-    if (time >= 10){
+    if (time >= 10) {
         $('#time').html(time);
-    } else if (time>=0){
+    } else if (time >= 0) {
         $('#time').html("0" + time);
     } else {
         gameOver();
     }
 }
-
-// The button has an on-click event handler that calls this
+function prompts() {
+    const index = Math.floor(Math.random() * prompts_list.length);
+    var prompt = prompts_list[index];
+    prompts_list.splice(index, 1);
+    var fact = document.getElementById("Fact");
+    var cap = document.getElementById("Cap");
+    var pro = document.getElementById("prompt");
+    if (prompt.startsWith("Fact ")) {
+        prompt.replace("Fact ", "");
+        pro.innerHTML(prompt);
+        fact.setAttribute("onclick", "score_cor()");
+        cap.setAttribute("onclick", "score()");
+    } else {
+        prompt.replace("Cap ", "");
+        pro.innerHTML(prompt);
+        cap.setAttribute("onclick", "score_cor()");
+        fact.setAttribute("onclick", "score()");
+    }
+}
 function start() {
-    // setInterval is a built-in function that will call the given function
-    // every N milliseconds (1 second = 1000 ms)
-    time = timeLeft
+    time = timeLeft;
     timer = setInterval(updateTimer, 1000);
 
-    // It will be a whole second before the time changes, so we'll call the update
-    // once ourselves
     updateTimer();
-
-    // We don't want the to be able to restart the timer while it is running,
-    // so hide the button.
+    prompts_list = facts;
     $('#playButton').hide();
     $('#timer').show();
     $('#explination').hide();
     $('#cloud').show();
+    $('#factorcap').show();
 }
 function restart() {
-    // setInterval is a built-in function that will call the given function
-    // every N milliseconds (1 second = 1000 ms)
-    time = timeLeft
+    time = timeLeft;
     timer = setInterval(updateTimer, 1000);
-
-    // It will be a whole second before the time changes, so we'll call the update
-    // once ourselves
+    prompts_list = facts;
     updateTimer();
 
-    // We don't want the to be able to restart the timer while it is running,
-    // so hide the button.
     $('#playAgainButton').hide();
     $('#timer').show();
     $('#end_messages').hide();
     $('#cloud').show();
+    $('#factorcap').show();
+    score_corect = 0;
+    score_tot = 1;
 }
 
 function score() {
+    prompts();
     score_tot++;
 }
 function score_cor() {
+    prompts();
     score_corect++;
     score_tot++;
 }
