@@ -21,6 +21,7 @@ Problems{
     die fotos van ons zijn beetje broko op mobile
     die fotos zijn in text
     die afrika hoort bij history en niet bij statistics
+    die general info is nu helemaal tot einde van screen weer en interviews ook
 }
 design{
     fotos inserten die kaya,jewel en desi hebben gemaakt
