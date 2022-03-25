@@ -12,9 +12,6 @@ h1 {
   }
 }
 
-/**
-* Styles for the puzzle
-*/
 #puzzle {
   display: inline-block;
   border: 1px solid black;
@@ -28,8 +25,8 @@ h1 {
 
 /* style for each square in the puzzle */
 .puzzleSquare {
-  height: 7vw;
-  width: 7vw;
+  height: 5.5vw;
+  width: 5.5vw;
   text-transform: uppercase;
   background-color: transparent;
   border: 0;
@@ -37,23 +34,24 @@ h1 {
 }
 @media only screen and (min-width: 600px) {
   #puzzle {
-    top: 0;
-    left: 0;
-    padding: 1rem;
+    top: 5%;
+    left: 10%;
+    max-width: 39vw;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
   }
   .puzzleSquare {
-    height: 2.76vw;
-    width: 2.76vw;
-    font: 2.3vw sans-serif;
+    height: 2.65vw;
+    width: 2.4vw;
+    font: 2.2vw sans-serif;
   }
-  #words{
-    position:absolute;
-    top: 0;
-    right: 0;
-    width: 20%;
+  #words a{
+    width: 12%;
     padding: 0;
     margin: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     height: 13*2.76vw;
   }
   #words li:not(:last-child) {
@@ -64,16 +62,18 @@ h1 {
     padding-top: 0.01px;
     padding-bottom: 0.01px;
   }
-
+}
 button::-moz-focus-inner {
   border: 0;
 }
 
 /* indicates when a square has been selected */
 #puzzle .selected {
-  background-color: orange;
+  color: orange
 }
-
+#create-grid{
+  display: none;
+}
 /* indicates that the square is part of a word that has been found */ 
 #puzzle .found {
   background-color: blue;
@@ -81,7 +81,7 @@ button::-moz-focus-inner {
 }
 
 #puzzle .solved {
-  background-color: purple;
+  background-color: #e0a9e0;
   color: white;
 }
 
@@ -116,31 +116,19 @@ button::-moz-focus-inner {
   padding: 1em;
   list-style-type: none;
   text-align: left;
-  background-color: rgb(182, 182, 182);
-  border: 1px black;
-  padding: 5px
+  background-color: transparent;
+  padding: 5px;
+  border: 1px black solid;
+  position: absolute;
+  right: 10%;
+  top: 5%;
 }
 
-/* indicates that the word has been found */
 .wordFound {
   text-decoration: line-through;
   color: gray;
 }
 
-/**
-* Styles for the controls
-*/
-#controls {
-  display: inline-block;
-  max-width: 30rem;
-  padding: 1em;
-  border: none;
-  text-align: left;
-}
-label {
-  white-space: nowrap;
-  margin-top: 1em;
-}
 input {
   border: none;
   font-size: 1em;
@@ -151,4 +139,50 @@ input {
 }
 #result-message {
   font-size: 1.2em;
+}
+
+.button {
+  position: absolute;
+  z-index: 2;
+  right: 20%;
+  text-align: center;
+  bottom: 10%;
+  width: 20%;
+  height: 10%;
+  font-size: 35px;
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button:hover,
+.button:focus { 
+    color: #ffffff;
+    background-color: #16437E;
+}
+
+.button:active {
+    color: rgb(255, 255, 255, .7);
+    background: #09223b;
 }

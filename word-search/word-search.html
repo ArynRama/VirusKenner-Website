@@ -17,7 +17,7 @@
     <script type="text/javascript" src="wordfind.js"></script> 
     <script type="text/javascript" src="wordfindgame.js"></script> 
 </head>
-<body onload="onLoad()">
+<body id="wordfind" onload="onLoad()">
     <div class="sideNav" id="sideNav">
         <i id="close" onclick="hideMenu()" class="fa fa-times"></i>
         <a class="logo" href="../index.html"><img class="logo" src="../img/logo.png"></a>
@@ -40,14 +40,14 @@
     <div class="content">
         <div id="main" role="main">
             <div id="puzzle"></div>
-            <ul id="words">
-                <li><a id="add-word"></a></li>
-            </ul>
-            <fieldset id="controls">
-                <button id="create-grid">Start</button>
+            <div id="word-list">
+                <ul id="words">
+                    <li><a id="add-word"></a></li>
+                </ul>
+            </div>
+                <button class="button" id="create-grid">Restart</button>
                 <p id="result-message"></p>
-                <button id="solve">Give Up</button>
-            </fieldset>
+                <button class="button" id="solve">Give Up</button>
         </div>
     </div>
 
@@ -95,6 +95,8 @@
         }
         wordfind.print(game);
         window.game = game;
+        $('#create-grid').hide();
+        $('#solve').show();
     }
     recreate();
 
