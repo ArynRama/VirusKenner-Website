@@ -13,7 +13,7 @@ Problems{
     Header mobile fixen
     hele ribbon laten gaan naar wat je wilt
     height veranderen van games/interviews en discuss (omdat je kan scrollen voor niks)
-    
+    mobile background img is niet geadd voor mobile
 }
 design{
     fotos inserten die kaya,jewel en desi hebben gemaakt
