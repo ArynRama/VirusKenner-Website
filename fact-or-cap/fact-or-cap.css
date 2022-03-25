@@ -9,7 +9,21 @@
     margin-right: auto;
     top: 5%;
 }
-
+#Cap, #Fact{
+    width: 10%;
+    height: auto;
+    display: none;
+}
+#Cap {
+    position: absolute;
+    top: 60%;
+    right: 35%;
+}
+#Fact {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+}
 #factorcap {
     display: none;
     position: absolute;
