@@ -53,21 +53,27 @@ a {
 }
 #HeaderWhatisHIV{
     color: #c158d6;
+    font-size: xx-large;
 }
 #Headercauses{
     color: #ff8800;
+    font-size: xx-large;
 }
 #Headereffects{
     color:#93e70a;
+    font-size: xx-large;
 }
 #Headerpreventions{
-    color:#e61e50
+    color:#e61e50;
+    font-size: xx-large;
 }
 #Headerhistory{
     color:#0a8181;
+    font-size: xx-large;
 }
 #Headerstatistics{
     color: #0ad2f5;
+    font-size: 2.5em;
 }
 #whitebloodcells{
     position: absolute;
