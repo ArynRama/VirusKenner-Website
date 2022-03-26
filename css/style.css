@@ -7,6 +7,9 @@ a {
     text-decoration: none;
     color: black;
 }
+.fa-light {
+    font-size: 20;
+}
 .background{
     display: block;
     position: fixed;
