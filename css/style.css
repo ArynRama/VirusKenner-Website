@@ -71,7 +71,7 @@ a {
 h2,h3{
     text-align: center;
 }
-p{
+#home p{
     padding-left: 15px;
     text-align: justify;
 }
@@ -101,27 +101,6 @@ p{
 }
 #Headerstatistics{
     color: #0ad2f5;
-}
-.games #wordsearch{
-    position: absolute;
-    left:350px;
-    top:130px;
-    font-size: 30px;
-    color:#10be99;
-    -webkit-text-stroke: black 0.1px;
-
-}
-.games #factorcap{
-    position: absolute;
-    right:350px;
-    top:130px;
-    font-size: 30px;
-    -webkit-text-stroke: black 0.1px;
-    background: -webkit-linear-gradient(#7e0404, #0ce20c);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 #groupfoto{
     position:absolute;
@@ -176,3 +155,55 @@ p{
 @media screen and (max-width: 700px) {
 }
 
+.games #words {
+    background-color: #87ebe97e;
+    left: 16%;
+}
+.games #words:hover{
+    border: 2px black solid;
+    background-color: #87ebe9;
+}
+.games p{
+    position: relative;
+    text-align: center !important;
+    font-size: 30px;
+}
+#wordsearch {
+    bottom: -15%;
+}
+#wrdimg, #facimg {
+    border: 1px black solid;
+    width: 70%;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#facimg {
+    margin-top: 18%;
+    background-color: white;
+}
+#factorcap {
+    bottom: -26%;
+}
+.games #fac{
+    background-color: #ebc6ff7e;
+    right: 16%;
+}
+.games div {
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    border-radius: 10%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    border: 2px rgb(10, 10, 10) solid;
+    transition: 1.5s;
+}
+#fac:hover {
+    background-color: #ebc6ff;
+}

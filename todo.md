@@ -20,7 +20,7 @@ Problems{
     die general info is nu helemaal tot einde van screen weer en interviews ook
 }
 design{
-    word search screen beter maken
-    game page
+    ~word search screen beter maken~
+    ~game page~
 }
     

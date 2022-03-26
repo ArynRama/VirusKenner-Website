@@ -43,9 +43,9 @@ h1 {
     position: absolute;
   }
   .puzzleSquare {
-    height: 2.65vw;
-    width: 2.4vw;
-    font: 2.2vw sans-serif;
+    height: 2.3vw;
+    width: 2.3vw;
+    font: 1.75vw sans-serif;
   }
   #words a{
     width: 12%;
@@ -80,7 +80,7 @@ button::-moz-focus-inner {
 }
 
 #puzzle .solved {
-  background-color: #e0a9e0;
+  background-color: #e0a9e0be;
   color: white;
   z-index: 5;
 }
@@ -120,9 +120,9 @@ button::-moz-focus-inner {
   padding: 5px;
   border: 1px black solid;
   position: absolute;
-  right: 10%;
+  right: 5%;
   top: 5%;
-  height: 300px;
+  height: 310px;
 }
 
 .wordFound {
@@ -145,9 +145,9 @@ input {
 .button {
   position: absolute;
   z-index: 2;
-  right: 20%;
+  right: 14%;
   text-align: center;
-  bottom: 10%;
+  bottom: 11.5%;
   width: 20%;
   height: 10%;
   font-size: 35px;

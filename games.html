@@ -10,7 +10,7 @@
 
 <head>
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youth Against HIV</title>
+    <title>Youth Against HIV: Games</title>
 </head>
 <body onload="onLoad()">
     <div class="sideNav" id="sideNav">
@@ -30,10 +30,20 @@
     <img class='background' id='background' src="./img/background.png">
     <div class="header">
         <i id="menu" onclick="showMenu()" class="fa fa-bars"></i>
-        <h1> Games</h1>
+        <h1>Games</h1>
     </div>
     <div class="content games">
-        <a id="wordsearch" href="./word-search/word-search.html">Word Search</a>
-        <a id="factorcap"class="fa-gradientfactorcap" href="./fact-or-cap/fact-or-cap.html">Fact Or Cap</a>
+        <a href="./word-search/word-search.html">
+            <div id="words">
+                <img id="wrdimg" src="./img/wordsearch.png">   
+                <p id="wordsearch"><b>Word Search</b></p> 
+            </div>
+        </a>
+        <a href="./fact-or-cap/fact-or-cap.html">
+            <div id="fac">
+                <img id="facimg" src="./img/factorcap.png">
+                <p id="factorcap"><b>Fact Or Cap</b></p>
+            </div>
+        </a>
     </div>
 </body>
