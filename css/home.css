@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow:hidden;
+}
+.content {
+    width: 100%;
+    max-width: 100%;
+}
+#home_banner {
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    transition: 2s;
+}
+.header {
+    z-index: 1;
+}
+#home_banner img{
+    height: 50vw;
+    width: auto;
+    max-width: 60vw;
+    align-self: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10%;
+}
+#groupfoto{
+    position:absolute;
+    height:500px;
+    width:auto;
+    right: 40px;
+    top: 100px;
+}
+#behindthescenes1{
+    position: absolute;
+    height:auto;
+    width:500px;
+    left: 40px;
+    top: 900px;
+}
+
+.intro{
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 720px;
+}
+.Afkortingfoto{
+    height: 300px;
+    width: auto;
+}

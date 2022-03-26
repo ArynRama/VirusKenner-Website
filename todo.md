@@ -13,7 +13,7 @@ Essential{
     
 }
 Problems{
-    Header mobile fixen
+    ~Header mobile fixen~
     die fotos van ons zijn beetje broko op mobile
     die fotos zijn in text
     die afrika hoort bij history en niet bij statistics
