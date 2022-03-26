@@ -30,7 +30,12 @@ a {
     max-width: 100%;
     z-index: -1;
 }
-.content{
+::-webkit-scrollbar{
+    display: none;
+}
+.content {
+    max-width: 100%;
+    overflow-x:
     background-color: transparent;
     height: auto;
     position: absolute;
