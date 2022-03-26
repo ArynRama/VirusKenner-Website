@@ -18,6 +18,7 @@ Problems{
     die fotos zijn in text
     die afrika hoort bij history en niet bij statistics
     die general info is nu helemaal tot einde van screen weer en interviews ook
+    our idea blabala naast die andere foto
 }
 design{
     word search screen beter maken
