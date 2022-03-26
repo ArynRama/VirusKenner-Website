@@ -116,6 +116,73 @@ h2,h3{
     text-align: justify;
 }
 
+#HeaderWhatisHIV{
+    color: #c158d6;
+}
+#Headercauses{
+    color: #ff8800;
+}
+#Headereffects{
+    color:#93e70a;
+}
+#Headerpreventions{
+    color:#e61e50
+}
+#Headerhistory{
+    color:#0a8181;
+}
+#Headerstatistics{
+    color: #0ad2f5;
+}
+#groupfoto{
+    position:absolute;
+    height:500px;
+    width:auto;
+    right: 40px;
+    top: 100px;
+}
+#behindthescenes1{
+    position: absolute;
+    height:auto;
+    width:500px;
+    left: 40px;
+    top: 900px;
+}
+#africa{
+    position: relative;
+    height: 230px;
+    width: auto;
+    left: 90px;
+    margin: 1px;
+    z-index: 0;
+}
+#hivheader{
+    position: relative;
+    left:0px;
+    right:0px;
+}
+.stages{
+    position: relative;
+    height: 100px;
+    width: auto;
+    margin: 1px;
+    z-index: 0;
+}
+#stageaids{
+    position: relative;
+    height: auto;
+    width: 600px;
+    left: 10px;
+    margin: 1px;
+    z-index: 0;
+}
+#whitebloodcells{
+    position: relative;
+    height: 90px;
+    width: auto;
+    margin: 1px;
+    z-index: 0;
+}
 .Questions{
     text-align: left;
     margin-left: 40px;
@@ -123,6 +190,19 @@ h2,h3{
 .Answers{
     text-align: left;
     margin-left: 45px;
+}
+.intro{
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 720px;
+}
+.Afkortingfoto{
+    height: 300px;
+    width: auto;
+}
+.Jaartal{
+    height: 100px;
+    width: auto;
 }
 
 @media screen and (max-width: 700px) {
@@ -179,8 +259,4 @@ h2,h3{
 }
 #fac:hover {
     background-color: #ebc6ff;
-}
-.Jaartal{
-    height: 100px;
-    width: auto;
 }
