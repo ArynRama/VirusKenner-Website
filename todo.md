@@ -19,9 +19,13 @@ Problems{
     die afrika hoort bij history en niet bij statistics
     die general info is nu helemaal tot einde van screen weer en interviews ook
     our idea blabala naast die andere foto
+
 }
 design{
     ~word search screen beter maken~
     ~game page~
+    text van home page reorderen/more photos
+    numbers even groot maken
+    pics bij HIV goed zetten
 }
     
