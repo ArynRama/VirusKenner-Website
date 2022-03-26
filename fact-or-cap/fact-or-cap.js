@@ -14,6 +14,7 @@ const facts = [
     "Fact There is no vaccine to prevent HIV .",
     "Fact You can have HIV and not know it.",
     "Fact You can contract HIV through a blood transfusion.",
+    "Fact HIV originally came from chimpanzees",
 ];
 
 function gameOver() {
@@ -109,6 +110,7 @@ function restart() {
         "Fact There is no vaccine to prevent HIV .",
         "Fact You can have HIV and not know it.",
         "Fact You can contract HIV through a blood transfusion.",
+        "Fact HIV originally came from chimpanzees",
     ];
     score_corect = 0;
     score_tot = 1;
@@ -124,7 +126,7 @@ function restart() {
 }
 
 function score() {
-    if (score_tot == 11) {
+    if (score_tot == 12) {
         gameOver();
     } else {
         score_tot++;
@@ -132,7 +134,7 @@ function score() {
     }
 };
 function score_cor() {
-    if (score_tot == 11) {
+    if (score_tot == 12) {
         gameOver();
     } else {
         score_corect++;
