@@ -20,8 +20,3 @@ function onLoad() {
     });
 }
 window.onresize = onLoad()
-function function_1() {
-    document.getElementById("home_banner").style.top = "-1500px";
-    document.getElementsByTagName("body").item(0).style.overflow = "visible";
-    document.getElementsByTagName("html").item(0).style.overflow = "visible";
-}
