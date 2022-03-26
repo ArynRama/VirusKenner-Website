@@ -10,6 +10,14 @@ a {
 .fa-light {
     font-size: 20;
 }
+#info .content {
+    width: 98%;
+    max-width: 98%;
+}
+#info ul {
+    margin-inline-start: 0;
+    margin-inline-end: 70px;
+}
 .background{
     display: block;
     position: fixed;

@@ -6,9 +6,9 @@ function hideMenu() {
 }
 function onLoad() {
     $(document).ready(function () {
-        var content = document.getElementsByClassName("content").item(0)
-        var height = jQuery(window).height()
-        var width = jQuery(window).maxWidth
+        var content = document.getElementsByClassName("content").item(0);
+        var height = jQuery(window).height();
+        var width = jQuery(window).width();
         content.style.height = `${height - 58}px`
         content.style.width = `${width}px`
         content.style.maxWidth = `${width}px`
