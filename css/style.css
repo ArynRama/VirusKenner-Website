@@ -35,7 +35,7 @@ a {
 }
 .content {
     max-width: 100%;
-    overflow-x:
+    overflow-x: scroll;
     background-color: transparent;
     height: auto;
     position: absolute;
