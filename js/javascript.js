@@ -7,7 +7,7 @@ function hideMenu() {
 function onLoad() {
     $(document).ready(function () {
         var content = document.getElementsByClassName("content").item(0)
-        var height = jQuery(window).height
+        var height = jQuery(window).height()
         var width = jQuery(window).maxWidth
         content.style.height = `${height - 58}px`
         content.style.width = `${width}px`
