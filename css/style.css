@@ -297,7 +297,7 @@ h2,h3{
     width: 100%;
     align-content: center;
     height: 100%;
-    top: 10%;
+    top: 8%;
 }
 #video1 ,#video2, #video3{
     width: 788.54px;
@@ -306,7 +306,6 @@ h2,h3{
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 4%;
     position: absolute;
     transition: 1s;
 }
@@ -336,5 +335,5 @@ h2,h3{
 }
 #writen_interview{
     position: absolute;
-    top: 90%
+    top: 95%
 }
