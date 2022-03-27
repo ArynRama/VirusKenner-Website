@@ -135,6 +135,7 @@ function score() {
 };
 function score_cor() {
     if (score_tot == 12) {
+        score_corect++;
         gameOver();
     } else {
         score_corect++;
