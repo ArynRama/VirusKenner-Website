@@ -329,7 +329,8 @@ h2,h3{
 }
 #credientials{
     position: absolute;
-    bottom: 13%;
+    bottom: 13
+    %;
     left: 21%;
     transition: 1s;
 }

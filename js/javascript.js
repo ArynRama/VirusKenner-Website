@@ -24,13 +24,13 @@ function interv_left() {
     if (showing == 3) {
         $("#video3").hide();
         $("#video2").show();
+        $("#credientials").hide();
         showing--;
         document.getElementById("right_C").style.color = "#000000";
         document.getElementById("right_C").setAttribute("onclick", "interv_right()");
     } else if (showing == 2) {
         $("#video2").hide();
         $("#video1").show();
-        $("#credientials").show();
         document.getElementById("left_C").style.color = "#5f5f5f";
         document.getElementById("left_C").setAttribute("onclick", "");
         showing--;
@@ -41,7 +41,6 @@ function interv_right() {
     if (showing == 1) {
         $("#video1").hide();
         $("#video2").show();
-        $("#credientials").hide();
         showing++;
         document.getElementById("left_C").style.color = "#000000";
         document.getElementById("left_C").setAttribute("onclick", "interv_left()");
@@ -51,6 +50,7 @@ function interv_right() {
         document.getElementById("right_C").setAttribute("onclick", "");
         $("#video2").hide();
         $("#video3").show();
+        $("#credientials").show();
     };
 }
 window.onresize = onLoad()
