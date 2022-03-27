@@ -19,51 +19,38 @@ function onLoad() {
         }
     });
 }
-var pos = 1
+var showing = 1;
 function interv_left() {
-    var video1 = document.getElementById("video1");
-    var video2 = document.getElementById("video2");
-    var video3 = document.getElementById("video3");
-    var video4 = document.getElementById("video4");
-    var cl = document.getElementById("left_C");
-    var cr = document.getElementById("right_C");
-    pos--
-    if (pos == 1) {
-        video2.style.left = "1500px";
-        video1.style.left = "0";
-        cl.setAttribute("onclick", "");
-        cl.style.color = "#5f5f5f";
-    } else if (pos == 2) {
-        video3.style.left = "1500px";
-        video2.style.left = "0";
-    } else if (pos == 3) {
-        video4.style.left = "1500px";
-        video3.style.left = "0";
-        cr.setAttribute("onclick", "invterv_right()");
-        cr.style.color = "#000000";
+    if (showing == 3) {
+        $("#video3").hide();
+        $("#video2").show();
+        showing--;
+        document.getElementById("right_C").style.color = "#000000";
+        document.getElementById("right_C").setAttribute("onclick", "interv_right()");
+    } else if (showing == 2) {
+        $("#video2").hide();
+        $("#video1").show();
+        $("#credientials").show();
+        document.getElementById("left_C").style.color = "#5f5f5f";
+        document.getElementById("left_C").setAttribute("onclick", "");
+        showing--;
     };
 }
+
 function interv_right() {
-    var video1 = document.getElementById("video1");
-    var video2 = document.getElementById("video2");
-    var video3 = document.getElementById("video3");
-    var video4 = document.getElementById("video4");
-    var cl = document.getElementById("left_C");
-    var cr = document.getElementById("right_C");
-    pos++
-    if (pos == 4) {
-        video3.style.left = "-500px";
-        video4.style.left = "0";
-        cr.setAttribute("onclick", "");
-        cr.style.color = "#5f5f5f";
-    } else if (pos == 3) {
-        video2.style.left = "-500px";
-        video3.style.left = "0";
-    } else if (pos == 2) {
-        video2.style.left = "-500px";
-        video1.style.left = "0";
-        cl.setAttribute("onclick", "invterv_left()");
-        cl.style.color = "#000000";
-    }
+    if (showing == 1) {
+        $("#video1").hide();
+        $("#video2").show();
+        $("#credientials").hide();
+        showing++;
+        document.getElementById("left_C").style.color = "#000000";
+        document.getElementById("left_C").setAttribute("onclick", "interv_left()");
+    } else if (showing == 2) {
+        showing++;
+        document.getElementById("right_C").style.color = "#5f5f5f";
+        document.getElementById("right_C").setAttribute("onclick", "");
+        $("#video2").hide();
+        $("#video3").show();
+    };
 }
 window.onresize = onLoad()

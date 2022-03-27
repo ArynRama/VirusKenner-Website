@@ -293,44 +293,48 @@ h2,h3{
     background-color: #ebc6ff;
 }
 #videos {
+    position:absolute;
     width: 100%;
     align-content: center;
-    height: auto;
-    top: 10%
+    height: 100%;
+    top: 10%;
 }
-#video1 {
+#video1 ,#video2, #video3{
     width: 788.54px;
     height: 443px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 15%;
+    top: 4%;
     position: absolute;
+    transition: 1s;
 }
-#video2, #video3, #video4 {
-    width: 788.54px;
-    height: 443px;
-    left: 1500px;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    top: 15%;
-    position: absolute;
+#video2, #video3 {
+    display: none;
 }
 .chevron {
     height: 15%;
     width: auto;
 }
-.fa-chevron-left {
+#left_C {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 12%;
     color: #5f5f5f;
 }
-
-.fa-chevron-right {
+#right_C {
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 12%;
+}
+#credientials{
+    position: absolute;
+    bottom: 13%;
+    left: 21%;
+    transition: 1s;
+}
+#writen_interview{
+    position: absolute;
+    top: 90%
 }
