@@ -11,19 +11,22 @@
     width:auto;
     right: 40px;
     top: 100px;
+    border: solid black 1px;
 }
 #behindthescenes1{
-    position: absolute;
+    position: relative;
     height:auto;
     width:500px;
-    left: 40px;
-    top: 900px;
 }
-
+p { 
+    padding-left: 15px;
+}
 .intro{
-    text-align: left;
     margin-left: 20px;
     margin-right: 720px;
+}
+.intro_2 {
+    text-align: right;
 }
 .Afkortingfoto{
     height: 300px;

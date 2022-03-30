@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-body {
+#sideNav body {
   margin: 0;
   font-family: Open Sans, sans-serif;
   font-size: 20px;
@@ -10,7 +10,10 @@ body {
   background: -webkit-linear-gradient(left, #eec8de, #e8b5db 50%, #eec8de);
   background: linear-gradient(to right, #eec8de, #e8b5db 50%, #eec8de);
 }
-
+.header {
+  top: 0;
+  left: 0;
+}
 html {
   min-height: 100%;
 }

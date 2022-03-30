@@ -1,109 +1,105 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Youth Against HIV: Word Search</title>
-    <link rel="stylesheet" type="text/css" href="wordfind.css">
-    <link href="../css/style.css" rel="stylesheet">
-    
-    <script src="../js/javascript.js"></script>
-    <link rel="stylesheet" href="../fontawsome/css/all.css">
-    <link rel="stylesheet" href="../css/ribbon.css">
-    <link rel="stylesheet" href="../css/sidebar.css">
-    
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
-    <script type="text/javascript" src="wordfind.js"></script> 
-    <script type="text/javascript" src="wordfindgame.js"></script> 
-</head>
-<body id="wordfind" onload="onLoad()">
-    <div class="sideNav" id="sideNav">
-        <i id="close" onclick="hideMenu()" class="fa fa-times"></i>
-        <a class="logo" href="../index.html"><img class="logo" src="../img/logo.png"></a>
-        <ul class="nav">
-            <li><a href="../info.html"><aside id="information" class='ribbon'>Information</aside></a></li>
-            <li><a href="../games.html"><aside id="games"class='ribbon'>Games</aside></a></li>
-            <li><a href="../interviews.html"><aside id="interviews"class='ribbon'>Interviews</aside></a></li>
-        </ul>
-        <ul class="socials">
-            <li><a id="insta"class="fa-gradient fab fa-instagram fa-2x" href="https://instagram.com/youth.against.hiv"></a></li>
-            <li><a id="tiktok"class="fab fa-tiktok fa-2x" href="https://www.tiktok.com/@youth.against.hiv"></a></li>
-            <li><a id="email"class="fa fa-envelope fa-2x" href="mailto: youth.against.hiv22@gmail.com"></a></li>
-        </ul>
-    </div>
-    <img class='background' id='background' src="../img/background.png">
-    <div class="header">
-        <i id="menu" onclick="showMenu()" class="fa fa-bars"></i>
-        <h1>Games: Word Search</h1>
-    </div>
-    <div class="content">
-        <div id="main" role="main">
-            <div id="puzzle"></div>
-            <div id="word-list">
-                <ul id="words">
-                    <li><a id="add-word"></a></li>
-                </ul>
-            </div>
-                <button class="button" id="create-grid">Restart</button>
-                <p id="result-message"></p>
-                <button class="button" id="solve">Give Up</button>
-        </div>
-    </div>
-
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Youth Against HIV: Word Search</title>
+		<link rel="stylesheet" type="text/css" href="wordfind.css">
+		<link href="../css/style.css" rel="stylesheet">
+		<script src="../js/javascript.js"></script>
+		<link rel="stylesheet" href="../fontawsome/css/all.css">
+		<link rel="stylesheet" href="../css/ribbon.css">
+		<link rel="stylesheet" href="../css/sidebar.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="wordfind.js"></script>
+		<script type="text/javascript" src="wordfindgame.js"></script>
+	</head>
+	<body id="wordfind" onload="onLoad()">
+		<div class="sideNav" id="sideNav">
+			<i id="close" onclick="hideMenu()" class="fa fa-times"></i>
+			<a class="logo" href="../index.html">
+				<img class="logo" src="../img/logo.png">
+			</a>
+			<ul class="nav">
+				<li>
+					<a href="../info.html">
+						<aside id="information" class='ribbon'>Information</aside>
+					</a>
+				</li>
+				<li>
+					<a href="../games.html">
+						<aside id="games" class='ribbon'>Games</aside>
+					</a>
+				</li>
+				<li>
+					<a href="../interviews.html">
+						<aside id="interviews" class='ribbon'>Interviews</aside>
+					</a>
+				</li>
+			</ul>
+			<ul class="socials">
+				<li>
+					<a id="insta" class="fa-gradient fab fa-instagram fa-2x" href="https://instagram.com/youth.against.hiv"></a>
+				</li>
+				<li>
+					<a id="tiktok" class="fab fa-tiktok fa-2x" href="https://www.tiktok.com/@youth.against.hiv"></a>
+				</li>
+				<li>
+					<a id="email" class="fa fa-envelope fa-2x" href="mailto: youth.against.hiv22@gmail.com"></a>
+				</li>
+			</ul>
+		</div>
+		<img class='background' id='background' src="../img/background.png">
+		<div class="header">
+			<i id="menu" onclick="showMenu()" class="fa fa-bars"></i>
+			<h1>Games: Word Search</h1>
+		</div>
+		<div class="content">
+			<div id="main" role="main">
+				<div id="puzzle"></div>
+				<div id="word-list">
+					<ul id="words">
+						<li>
+							<a id="add-word"></a>
+						</li>
+					</ul>
+				</div>
+				<button class="button" id="create-grid">Restart</button>
+				<p id="result-message"></p>
+				<button class="button" id="solve">Give Up</button>
+			</div>
+		</div>
+	</body>
 </html>
 <script>
-    [
-        "Immunodeficiency",
-        "Infection",
-        "Transmission",
-        "Immunesystem",
-        "Vaginalfluids",
-        "Macrophages",
-        "Aware",
-        "Intercourse",
-        "Semen",
-        "Antibody",
-        "Syringe",
-        "Breastmilk",
-        "Blood",
-        "Sex",
-        "Condom",
-        "Hypertcells",
-        "Prep",
-        "Aids",
-        "Injection",
-        "Measures"
-    ].map(word => WordFindGame.insertWordBefore($('#add-word').parent(), word));
-
-    /* Init */
-    function recreate() {
-        $('#result-message').removeClass();
-        var fillBlanks, game;
-        try {
-            game = new WordFindGame('#puzzle', {
-                allowedMissingWords: 0,
-                maxGridGrowth: 20,
-                fillBlanks: fillBlanks,
-                allowExtraBlanks: 'random',
-                maxAttempts: 100,
-            });
-        } catch (error) {
-            $('#result-message').text(`${error}, try to specify less ones`).css({color: 'red'});
-            return;
-        }
-        wordfind.print(game);
-        window.game = game;
-        $('#create-grid').hide();
-        $('#solve').show();
-    }
-    recreate();
-
-    /* Event listeners */
-    $('#extra-letters').change((evt) => $('#secret-word').prop('disabled', !evt.target.value.startsWith('secret-word')));
-
-    $('#create-grid').click(recreate);
-
-    $('#solve').click(() => game.solve());
-    </script>
+	["Immunodeficiency", "Infection", "Transmission", "Immunesystem", "Vaginalfluids", "Macrophages", "Aware", "Intercourse", "Semen", "Antibody", "Syringe", "Breastmilk", "Blood", "Sex", "Condom", "Hypertcells", "Prep", "Aids", "Injection", "Measures"].map(word => WordFindGame.insertWordBefore($('#add-word').parent(), word));
+	/* Init */
+	function recreate() {
+		$('#result-message').removeClass();
+		var fillBlanks, game;
+		try {
+			game = new WordFindGame('#puzzle', {
+				allowedMissingWords: 0,
+				maxGridGrowth: 20,
+				fillBlanks: fillBlanks,
+				allowExtraBlanks: 'random',
+				maxAttempts: 100,
+			});
+		} catch (error) {
+			$('#result-message').text(`${error}, try to specify less ones`).css({
+				color: 'red'
+			});
+			return;
+		}
+		wordfind.print(game);
+		window.game = game;
+		$('#create-grid').hide();
+		$('#solve').show();
+	}
+	recreate();
+	/* Event listeners */
+	$('#extra-letters').change((evt) => $('#secret-word').prop('disabled', !evt.target.value.startsWith('secret-word')));
+	$('#create-grid').click(recreate);
+	$('#solve').click(() => game.solve());
+</script>
