@@ -6,10 +6,10 @@
     background-color: #feba76;
 }
 #information:before{
-    border-color: #f3b271 #f3b271 #f3b271 transparent;
+    border-color: #feba76 #feba76 #feba76 transparent;
 }
 #information:after{
-    border-color: #f3b271 transparent#f3b271 #f3b271;
+    border-color: #feba76 transparent #feba76 #feba76;
 }
 #games{
 background-color: #caf2a0;
@@ -35,7 +35,7 @@ background-color: #caf2a0;
     border-color:  #48a0a1 #48a0a1 #48a0a1 transparent;
 }
 #interviews:after{
-    border-color:  #48a0a1 transparent#48a0a1 #48a0a1;
+    border-color:  #48a0a1 transparent #48a0a1 #48a0a1;
 }
 
 .fa-gradient{
@@ -50,7 +50,7 @@ background-color: #caf2a0;
     height: 100%;
     width: 25%;
     top: 0;
-    left: -300px;
+    left: -26%;
     text-align: center;
     z-index: 2;
     background-position-x: left;
@@ -58,7 +58,7 @@ background-color: #caf2a0;
     max-width: 300px;
     position: fixed;
     overflow-x: hidden;
-    transition: 1s;
+    transition: 0.7s;
 }
 .sideNav ul li{
     list-style: none;
@@ -87,9 +87,9 @@ background-color: #caf2a0;
 }
 .fab, .fa{
     margin: 10px;
-}
-#insta{
-    -webkit-text-stroke: black 0.5px;
+    color: black;
+    text-emphasis: none;
+    text-decoration: none;
 }
 #tiktok{
     color: white;
@@ -120,6 +120,11 @@ background-color: #caf2a0;
     height: 15%;
     padding: 15px;
     padding-top: 30px;
+}
+.ribbonthingy {
+    color: black;
+    text-decoration: none;
+    -webkit-text-stroke: 0.5px black;
 }
 @media screen and (max-width: 700px){
     .sideNav{

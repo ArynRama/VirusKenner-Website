@@ -6,16 +6,15 @@ function hideMenu() {
 }
 function onLoad() {
     $(document).ready(function () {
-        var content = document.getElementsByClassName("content").item(0);
         var height = jQuery(window).height();
         var width = jQuery(window).width();
-        content.style.height = `${height - 58}px`
-        content.style.width = `${width}px`
-        content.style.maxWidth = `${width}px`
+        document.getElementById("content").style.height = `${height - 58}px`
+        document.getElementById("content").style.width = `100%`
+        document.getElementById("content").style.maxWidth = `100%`
         if (jQuery(window).width() > 700) {
-            document.getElementById("background").setAttribute("src", "../img/background.png");
+            document.getElementById("content").style.backgroundImage = "url('../img/background.png')";
         } else {
-            document.getElementById("background").setAttribute("src", "../img/background_mobile.png");
+            document.getElementById("content").style.backgroundImage = "url('../img/background_mobile.png')";
         }
     });
 }

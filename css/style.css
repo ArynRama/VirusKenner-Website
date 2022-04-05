@@ -3,10 +3,6 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-a {
-    text-decoration: none;
-    color: black;
-}
 .fa-light {
     font-size: 20;
 }
@@ -34,7 +30,6 @@ a {
     display: none;
 }
 .content {
-    max-width: 100%;
     overflow-x: scroll;
     background-color: transparent;
     height: auto;
@@ -44,7 +39,9 @@ a {
     margin-right: auto;
     padding-left: 20px;
     display: block;
-    width: 100%;
+    left: 0;
+    background-image: url("../img/background.png");
+    background-size: 100% 100%;
     margin: 0;
     top: 58px;
     padding: 0;
@@ -120,16 +117,6 @@ a {
     -webkit-text-stroke: black 0.1px;
     font-family: 'Permanent Marker', cursive;
 }
-@media screen and (max-width:700px){
-    .header {
-        height: 15%;
-        background-color: #ebb6c2;
-    }
-    .content{
-        height: 85%;
-        bottom: 0;
-    }
-}
 h2,h3{
     text-align: center;
 }
@@ -157,13 +144,6 @@ h2,h3{
     width:auto;
     right: 40px;
     top: 100px;
-}
-#behindthescenes1{
-    position: absolute;
-    height:auto;
-    width:500px;
-    left: 40px;
-    top: 900px;
 }
 #africa{
     position: relative;
@@ -209,11 +189,6 @@ h2,h3{
     text-align: left;
     margin-left: 45px;
 }
-.intro{
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 720px;
-}
 .Afkortingfoto{
     position: relative;
     height: 400px;
@@ -232,10 +207,6 @@ h2,h3{
     height: 100px;
     width: auto;
 }
-
-@media screen and (max-width: 700px) {
-}
-
 .games #words {
     background-color: #87ebe97e;
     left: 16%;
@@ -333,4 +304,13 @@ h2,h3{
 #writen_interview{
     position: absolute;
     top: 95%
+}
+@media screen and (max-width:700px) {
+    .header {
+        height: 58px;
+        background-color: #ebb6c2;
+    }
+    .header h1 {
+        -webkit-text-stroke: black 1px;
+    }
 }

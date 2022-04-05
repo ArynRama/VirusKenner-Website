@@ -1,29 +1,30 @@
-.content {
-    width: 100%;
-    max-width: 100%;
-}
 .header {
     z-index: 1;
 }
 #groupfoto{
     position:absolute;
-    height:500px;
-    width:auto;
-    right: 40px;
-    top: 100px;
+    height:auto;
+    width:50%;
+    right: 3%;
+    top: 15%;
     border: solid black 1px;
 }
-#behindthescenes1{
-    position: relative;
-    height:auto;
-    width:500px;
+#behindthescenes1 {
+    position: absolute;
+    height: auto;
+    width: 32%;
+    left: 5%;
+    top: 115%;
+    margin-bottom: 15px;
+    border: solid black 1px;
 }
 p { 
-    padding-left: 15px;
+    padding-left: 1.2%;
 }
 .intro{
-    margin-left: 20px;
-    margin-right: 720px;
+    margin-left: 0.5%;
+    margin-right: 55%;
+    text-align: left;
 }
 .intro_2 {
     text-align: right;
@@ -31,4 +32,28 @@ p {
 .Afkortingfoto{
     height: 300px;
     width: auto;
+}
+@media screen and (max-width:700px) {
+    #groupfoto{
+        position: relative;
+        width: 90%;
+        top: 1%;
+        left: 50%;
+        transform:translateX(-50%);
+    }
+    #behindthescenes1 {
+        position: relative;
+        width: 90%;
+        transform: translateX(-50%);
+        left: 50%;
+        top: 0;
+    }
+    .intro {
+        margin-right: 3%;
+        margin-left: 3%;
+        text-align: justify;
+    }
+    .content img {
+        border-width: 2px !important;
+    }
 }
