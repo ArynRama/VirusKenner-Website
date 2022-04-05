@@ -33,6 +33,10 @@ p {
     height: 300px;
     width: auto;
 }
+.content a{
+    text-decoration: none;
+    color: #02029b;
+}
 @media screen and (max-width:700px) {
     #groupfoto{
         position: relative;
