@@ -2,18 +2,9 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    font-size: 100%;
 }
-.fa-light {
-    font-size: 20;
-}
-#info .content {
-    width: 98%;
-    max-width: 98%;
-}
-#info .content ul {
-    margin-inline-start: 0;
-    margin-inline-end: 70px;
-}
+
 .background{
     display: block;
     position: fixed;
@@ -26,9 +17,11 @@
     max-width: 100%;
     z-index: -1;
 }
+
 ::-webkit-scrollbar{
     display: none;
 }
+
 .content {
     overflow-x: scroll;
     background-color: transparent;
@@ -45,56 +38,9 @@
     margin: 0;
     top: 58px;
     padding: 0;
-    font-family:'Poppins', sans-serif;
     z-index: 0;
 }
-#africa{
-    position: absolute;
-    height: 230px;
-    width: auto;
-    left: 90px;
-    margin: 1px;
-    z-index: 0;
-}
-#stages{
-    position: absolute;
-    height: 230px;
-    width: auto;
-    left: 90px;
-    margin: 1px;
-    z-index: 0;
-}
-#HeaderWhatisHIV{
-    color: #c158d6;
-    font-size: xx-large;
-}
-#Headercauses{
-    color: #ff8800;
-    font-size: xx-large;
-}
-#Headereffects{
-    color:#93e70a;
-    font-size: xx-large;
-}
-#Headerpreventions{
-    color:#e61e50;
-    font-size: xx-large;
-}
-#Headerhistory{
-    color:#0a8181;
-    font-size: xx-large;
-}
-#Headerstatistics{
-    color: #0ad2f5;
-    font-size: 2.5em;
-}
-#whitebloodcells{
-    position: absolute;
-    height: 90px;
-    width: auto;
-    margin: 1px;
-    z-index: 0;
-}
+
 .header {
     position: fixed;
     height: 58px;
@@ -103,10 +49,7 @@
     z-index: 1;
     background-color: #ebb6c2;
 }
-#info .content {
-    margin-left: 10px;
-    margin-right: 10px;
-}
+
 .header h1{
     text-align: center;
     color: #ffffff;
@@ -116,200 +59,23 @@
     margin-block-start: 0;
     -webkit-text-stroke: black 0.1px;
     font-family: 'Permanent Marker', cursive;
+    font-size: 250%;
 }
-h2,h3{
+h2 {
+    font-size: 175%;
     text-align: center;
 }
-#HeaderWhatisHIV{
-    color: #c158d6;
-}
-#Headercauses{
-    color: #ff8800;
-}
-#Headereffects{
-    color:#93e70a;
-}
-#Headerpreventions{
-    color:#e61e50
-}
-#Headerhistory{
-    color:#0a8181;
-}
-#Headerstatistics{
-    color: #0ad2f5;
-}
-#groupfoto{
-    position:absolute;
-    height:500px;
-    width:auto;
-    right: 40px;
-    top: 100px;
-}
-#africa{
-    position: relative;
-    height: 230px;
-    width: auto;
-    left: 90px;
-    margin: 1px;
-    z-index: 0;
-}
-.stages{
-    position: relative;
-    height: 100px;
-    width: auto;
-    margin: 1px;
-    z-index: 0;
-}
-#stageaids{
-    position: relative;
-    height: auto;
-    width: 600px;
-    left: 10px;
-    margin: 1px;
-    z-index: 0;
-}
-#whitebloodcells{
-    position: relative;
-    height: 90px;
-    width: auto;
-    margin: 1px;
-    z-index: 0;
-}
-.numbers{
-    position: relative;
-    height: 30px;
-    width: auto;
-    top: 5px;
-}
-.Questions{
-    text-align: left;
-    margin-left: 40px;
-}
-.Answers{
-    text-align: left;
-    margin-left: 45px;
-}
-.Afkortingfoto{
-    position: relative;
-    height: 400px;
-    width: auto;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.Afkortingfoto2{
-    position: relative;
-    width: auto;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.Jaartal{
-    position: relative;
-    height: 100px;
-    width: auto;
-}
-.games #words {
-    background-color: #87ebe97e;
-    left: 16%;
-}
-.games #words:hover{
-    border: 2px black solid;
-    background-color: #87ebe9;
-}
-.games p{
-    position: relative;
-    text-align: center !important;
-    font-size: 30px;
-}
-#wordsearch {
-    bottom: -15%;
-}
-#wrdimg, #facimg {
-    border: 1px black solid;
-    width: 70%;
-    height: auto;
-    left: 0;
-    right: 0;
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-}
-#facimg {
-    margin-top: 18%;
-    background-color: white;
-}
-#factorcap {
-    bottom: -26%;
-}
-.games #fac{
-    background-color: #ebc6ff7e;
-    right: 16%;
-}
-.games div {
-    width: 30%;
-    height: 80%;
-    position: absolute;
-    top: 10%;
-    border-radius: 10%;
+h3 {
     text-align: center;
-    align-content: center;
-    justify-content: center;
-    border: 2px rgb(10, 10, 10) solid;
-    transition: 1.5s;
+    font-size: 130%;
 }
-#fac:hover {
-    background-color: #ebc6ff;
-}
-#videos {
-    position:absolute;
-    width: 100%;
-    align-content: center;
-    height: 100%;
-    top: 8%;
-}
-#video1 ,#video2, #video3{
-    width: 788.54px;
-    height: 443px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    transition: 1s;
-}
-#video2, #video3 {
-    display: none;
-}
-.chevron {
-    height: 15%;
-    width: auto;
-}
-#left_C {
-    position: absolute;
-    top: 40%;
-    left: 12%;
-    color: #5f5f5f;
-}
-#right_C {
-    position: absolute;
-    top: 40%;
-    right: 12%;
-}
-#credientials{
-    position: absolute;
-    display: none;
-    bottom: 13%;
-    left: 21%;
-    transition: 1s;
-}
-#writen_interview{
-    position: absolute;
-    top: 95%
-}
+
 @media screen and (max-width:700px) {
     .header {
         height: 58px;
         background-color: #ebb6c2;
     }
+
     .header h1 {
         -webkit-text-stroke: black 1px;
     }

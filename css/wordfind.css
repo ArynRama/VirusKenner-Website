@@ -6,7 +6,7 @@ h1 {
   max-width: 80rem;
   text-align: center; /* to center #puzzle on small devices */
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   #main {
     text-align: left;
   }
@@ -32,7 +32,7 @@ h1 {
   border: 0;
   font: 5vw sans-serif;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   #puzzle {
     top: 5%;
     left: 10%;
@@ -93,7 +93,7 @@ button::-moz-focus-inner {
 /**
 * Styles for the word list
 */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   #words {
     -moz-column-count: 2;
     -webkit-column-count: 2;

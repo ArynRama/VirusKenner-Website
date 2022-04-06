@@ -1,0 +1,105 @@
+#videos {
+    position: absolute;
+    width: 100%;
+    align-content: center;
+    height: 100%;
+    top: 8%;
+}
+
+#video1,
+#video2,
+#video3 {
+    width: 70%;
+    height: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 1s;
+}
+
+#video2,
+#video3 {
+    display: none;
+}
+
+.chevron {
+    height: 15%;
+    width: auto;
+}
+
+#left_C {
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    color: #5f5f5f;
+}
+
+#right_C {
+    position: absolute;
+    top: 40%;
+    right: 12%;
+}
+
+#credientials {
+    position: relative;
+    display: none;
+    bottom: -78%;
+    left: 15%;
+    transition: 1s;
+}
+
+#writen_interview {
+    position: absolute;
+    top: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.Questions {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.Answers {
+    text-align: left;
+    margin-left: 45px;
+}
+
+@media screen and (max-width: 700px) {
+    #video1,
+    #video2,
+    #video3 {
+        top: 20%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 35%;
+    }
+
+    #left_C {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        color: #5f5f5f;
+    }
+    
+    #right_C {
+        position: absolute;
+        top: 50%;
+        right: 40%;
+    }
+
+    #credientials {
+        position: relative;
+        display: none;
+        bottom: -36%;
+        left: 5%;
+        transition: 1s;
+    }
+
+    #writen_interview {
+        position: absolute;
+        top: 60%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}

@@ -1,0 +1,217 @@
+p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.Afkortingfoto {
+    position: relative;
+    height: auto;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#in1981 {
+    position: absolute;
+    height: auto;
+    width: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px;
+}
+
+#_1981 {
+    position: relative;
+    top: 25vh;
+}
+
+#in1983 {
+    position: relative;
+    height: auto;
+    width: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20vh;
+}
+
+#_1983 {
+    position: relative;
+    top: 20vh;
+}
+
+#grid {
+    position: relative;
+    width: 50%;
+    top: 12vh;
+    margin-top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stages {
+    position: relative;
+    height: auto;
+    width: 30%;
+    margin-left: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fa-light {
+    font-size: 175%;
+    margin-right: 0.5%;
+}
+#whitebloodcells {
+    float: right;
+    height: auto;
+    width: 20%;
+    position: absolute;
+    top: 66%;
+    right: 5%;
+}
+
+.list_upper {
+    list-style: none;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+#stage1explination {
+    text-align: left;
+}
+
+#HIVMeaning {
+    margin-right: 30%;
+    margin-bottom: 5%;
+}
+
+.numbers {
+    position: relative;
+    height: 30px;
+    width: auto;
+    top: 5px;
+}
+
+#HeaderWhatisHIV {
+    color: #c158d6;
+}
+
+#Headercauses {
+    color: #ff8800;
+}
+
+#Headereffects {
+    color: #93e70a;
+}
+
+#Headerpreventions {
+    color: #e61e50;
+}
+
+#Headerhistory {
+    color: #0a8181;
+}
+
+#Headerstatistics {
+    color: #0ad2f5;
+    margin-top: 15%;
+}
+#africa {
+    position: relative;
+    height: auto;
+    width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20vh;
+}
+
+#stages {
+    position: absolute;
+    height: 230px;
+    width: auto;
+    left: 90px;
+    margin: 1px;
+    z-index: 0;
+}
+
+h4{
+    text-align: center;
+}
+
+section {
+    margin-bottom: 5%;
+}
+@media screen and (max-width: 700px) {
+    .Afkortingfoto {
+        width: 90%;
+    }
+
+    .stages {
+        width: 90%;
+    }
+
+    #africa {
+        top: 9vh;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #causes {
+        margin-right: 3%
+    }
+
+    #whitebloodcells {
+        display: none
+    }
+
+    #HIVMeaning {
+        margin-right: 3%;
+        margin-bottom: 0;
+    }
+
+    #in1981 {
+        height: auto;
+        width: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 10px;
+    }
+    #_1981 {
+        position: relative;
+        float: none;
+        width: 100%;
+        height: auto;
+        top: 13vh;
+    }
+    
+    #in1983 {
+        position: relative;
+        height: auto;
+        width: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 12vh;
+    }
+    
+    #_1983 {
+        position: relative;
+        top: 10vh;
+    }
+
+    #grid {
+        position: relative;
+        width: 90%;
+        float: none;
+        top: 10vh;
+        margin-top: 6%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
