@@ -1,7 +1,7 @@
 #cloud{
     position: absolute;
-    width: auto;
-    height: 95%;
+    width: 70%;
+    height: auto;
     left: 0;
     right: 0;
     display: none;
@@ -146,4 +146,30 @@
 .button:active {
     color: rgb(255, 255, 255, .7);
     background: #09223b;
+}
+
+@media screen and (max-width: 700px) {
+    .button {
+        width: 50%;
+        height: 7%;
+        font-size: 2em;
+    }
+    #cloud {
+        top: 27%;
+        width: 90%
+    }
+    #Fact, #Cap {
+        top: 70%;
+        height: auto;
+        width: 20%;
+    }
+    #Cap {
+        right: 20%;
+    }
+    #Fact {
+        left: 20%;
+    }
+    #timer {
+        width:13%;
+    }
 }
