@@ -14,9 +14,9 @@
     height: auto;
     width: 32%;
     left: 5%;
-    top: 115%;
-    margin-bottom: 15px;
-    border: solid black 1px;
+    top: 110%;
+    padding-bottom: 1%;
+    -webkit-text-stroke: black 1px;
 }
 p { 
     padding-left: 1.2%;
@@ -28,6 +28,10 @@ p {
 }
 .intro_2 {
     text-align: right;
+    margin-left: 55%;
+    margin-right: 2.5%;
+    position: absolute;
+    bottom: -20%;
 }
 .Afkortingfoto{
     height: 300px;

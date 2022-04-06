@@ -82,7 +82,7 @@ background-color: #caf2a0;
     margin-left: auto;
     margin-right: auto;
     position:relative;
-    bottom: 0;
+    bottom: -8%;
     text-decoration: none;
 }
 .fab, .fa{
@@ -150,7 +150,7 @@ background-color: #caf2a0;
         position: fixed;
     }
     .socials {
-        bottom: 2%;
+        bottom: -20%;
     }
     .content {
         margin-left: 0;
