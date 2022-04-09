@@ -332,9 +332,9 @@
                 // initialize the options
                 var maxWordLength = wordList[0].length;
                 var options = {
-                    height: opts.height || maxWordLength,
-                    width: opts.width || maxWordLength,
-                    orientations: opts.orientations || allOrientations,
+                    height: 16,
+                    width: 16,
+                    orientations: allOrientations,
                     fillBlanks: opts.fillBlanks !== undefined ? opts.fillBlanks : true,
                     allowExtraBlanks: opts.allowExtraBlanks !== undefined ? opts.allowExtraBlanks : true,
                     maxAttempts: opts.maxAttempts || 3,
