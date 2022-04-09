@@ -224,6 +224,8 @@
                     $('.selected').addClass('found');
                     wordList.splice(i, 1);
                     $('input.word[value="' + curWord + '"]').addClass('wordFound');
+                    $('.defs').hide();
+                    $('#def_' + curWord).show();
                 }
 
                 if (wordList.length === 0) {

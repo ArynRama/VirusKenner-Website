@@ -124,9 +124,15 @@ button::-moz-focus-inner {
   	position: absolute;
   	right: 5%;
   	top: 5%;
-  	height: 310px;
+  	height: 41%;
 }	
-
+.defs {
+	right: 3%;
+	margin-right: 3%;
+	top: 50%;
+	display: none;
+	position: absolute;
+}
 .wordFound {
   	text-decoration: line-through;
   	color: gray;
