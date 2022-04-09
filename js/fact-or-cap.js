@@ -1,5 +1,5 @@
 var timer;
-const timeLeft = 26; // seconds
+const timeLeft = 30; // seconds
 var score_tot = 1;
 var score_corect = 0;
 const facts = [
@@ -48,6 +48,7 @@ function updateTimer() {
     }
 }
 function prompts() {
+    document.getElementById("prompt").style.color = "black";
     const index = Math.floor(Math.random() * prompts_list.length);
     var prompt = prompts_list[index];
     var fact = document.getElementById("Fact");
@@ -125,7 +126,9 @@ function restart() {
     $('#Cap, #Fact').show();
 }
 
-function score() {
+async function score() {
+    document.getElementById("prompt").style.color = "red";
+    await new Promise(resolve => setTimeout(resolve, 400));
     if (score_tot == 12) {
         gameOver();
     } else {
@@ -133,7 +136,16 @@ function score() {
         prompts();
     }
 };
-function score_cor() {
+
+async function score_cor() {
+    document.getElementById("prompt").style.color = "lime";
+    await new Promise(resolve => setTimeout(resolve, 400));
+    if (score_tot == 12) {
+        gameOver();
+    } else {
+        score_tot++;
+        prompts();
+    }
     if (score_tot == 12) {
         score_corect++;
         gameOver();
