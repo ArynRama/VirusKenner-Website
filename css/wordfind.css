@@ -131,7 +131,10 @@ button::-moz-focus-inner {
 	margin-right: 3%;
 	top: 50%;
 	display: none;
+	max-width: 31%;
 	position: absolute;
+	color: #000000;
+	font-weight: 300;
 }
 .wordFound {
   	text-decoration: line-through;

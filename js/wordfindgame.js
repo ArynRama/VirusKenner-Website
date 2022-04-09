@@ -230,6 +230,8 @@
 
                 if (wordList.length === 0) {
                     $('.puzzleSquare').addClass('complete');
+                    $('#create-grid').show();
+                    $('#solve').hide()
                 }
             }
 
