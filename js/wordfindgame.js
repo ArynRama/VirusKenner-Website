@@ -225,7 +225,10 @@
                     wordList.splice(i, 1);
                     $('input.word[value="' + curWord + '"]').addClass('wordFound');
                     $('.defs').hide();
-                    $('#def_' + curWord).show();
+                    if(curWord == "aware"){
+                    } else {
+                        $('#def_' + curWord).show();
+                    }
                 }
 
                 if (wordList.length === 0) {
