@@ -29,15 +29,22 @@ background-color: #caf2a0;
 #discussion:after{
     border-color: #f37a96 transparent #f37a96 #f37a96;
 }
-#interviews{background-color: #4fabac;
+#interviews{background-color: #e2a3ff;
 }
 #interviews:before{
-    border-color:  #48a0a1 #48a0a1 #48a0a1 transparent;
+    border-color:  #dca0f8 #dca0f8 #dca0f8 transparent;
 }
 #interviews:after{
-    border-color:  #48a0a1 transparent #48a0a1 #48a0a1;
+    border-color:  #dca0f8 transparent #dca0f8 #dca0f8;
 }
-
+#stglobi{background-color: #53e9eb;
+}
+#stglobi:before{
+    border-color:  #4fe1e3 #4fe1e3 #4fe1e3 transparent;
+}
+#stglobi:after{
+    border-color:  #4fe1e3 transparent #4fe1e3 #4fe1e3;
+}
 .fa-gradient{
     background: -webkit-linear-gradient(#8a3ab9,#bc2a8d,#fccc63);
     -webkit-background-clip: text;
@@ -82,7 +89,7 @@ background-color: #caf2a0;
     margin-left: auto;
     margin-right: auto;
     position:relative;
-    bottom: -8%;
+    bottom: -2%;
     text-decoration: none;
 }
 .fab, .fa{
