@@ -8,7 +8,7 @@ function onLoad() {
     $(document).ready(function () {
         var height = jQuery(window).height();
         var width = jQuery(window).width();
-        document.getElementById("content").style.height = `${height - 58}px`
+        document.getElementById("content").style.height = `91.7%`
         document.getElementById("content").style.width = `100%`
         document.getElementById("content").style.maxWidth = `100%`
         if (jQuery(window).width() > 700) {

@@ -327,7 +327,7 @@
 
     // Static method
     WordFindGame.insertWordBefore = function (el, word) {
-        $('<li><input class="word" readonly value="' + (word || '') + '"></li>').insertBefore(el);
+        $('<li><input id="beep" class="word" onclick="showdef(this)" readonly value="' + (word || '') + '"></li>').insertBefore(el);
     };
 
 

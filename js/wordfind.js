@@ -507,4 +507,8 @@
     root.wordfind = WordFind();
 
 }).call(this);
-
+function showdef(ele) {
+    var word = ele.value
+    $(".defs").hide();
+    $("#def_" + word).show();
+ }

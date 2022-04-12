@@ -14,6 +14,7 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="../js/wordfind.js"></script>
 		<script type="text/javascript" src="../js/wordfindgame.js"></script>
+		<script type="text/javascript" src="../js/test.js"></script>
 	</head>
 	<body id="wordfind" onload="onLoad()">
 		<div class="sideNav" id="sideNav">
@@ -78,7 +79,7 @@
 				<p class="defs" id="def_Blood">Exposure to blood that contains HIV is one of the highest risks of getting HIV, because blood can carry more of the virus that other bodily fluids.</p>
 				<p class="defs" id="def_Sex">One of the most common ways HIV can be transmitted is through anal or vaginal sex.</p>
 				<p class="defs" id="def_Condom">Using condoms every time you have sex is one of the ways to prevent HIV.</p>
-				<p class="defs" id="def_tcells">Also called CD4 cells and are white blood cells that are critical to the immune system. They are responsible for keeping people healthy and protecting them from common diseases. HIV attacks these specific immune system cells in the body which makes it harder for the body to fight off other infections.</p>
+				<p class="defs" id="def_Tcell">Also called CD4 cells and are white blood cells that are critical to the immune system. They are responsible for keeping people healthy and protecting them from common diseases. HIV attacks these specific immune system cells in the body which makes it harder for the body to fight off other infections.</p>
 				<p class="defs" id="def_Prep">PrEP stands for Pre-exposure prophylaxis. With this strategy , people  at an increased risk for getting or transmitting HIV use daily medication in pill form to help prevent HIV transmission, It can stop HIV from taking hold and spreading throughout the body.</p>
 				<p class="defs" id="def_Aids">Aids stands for Acquired immunodeficiency syndrome. This is a condition that results in serious damage to the immune system and is the 3th and advanced stage of HIV.</p>
 				<p class="defs" id="def_Injection">Sharing drug injection equipment puts people at risk for getting or transmitting HIV. The risk is very high if a HIV-negative person uses injection equipment that someone with HIV has used, because it may have blood in it. But you also have injectable HIV , which is a way to prevent or treat HIV.</p>
@@ -94,7 +95,7 @@
 	</body>
 </html>
 <script>
-	["Immunodeficiency", "Infection", "Transmission", "Pep", "Undetectable", "Immunesystem", "Vaginalfluids", "Macrophages", "Aware", "Intercourse", "Semen", "Antibody", "Syringe", "Breastmilk", "Blood", "Sex", "Condom", "Tcells", "Prep", "Aids", "Injection", "Measures"].map(word => WordFindGame.insertWordBefore($('#add-word').parent(), word));
+	["Immunodeficiency", "Infection", "Transmission", "Pep", "Undetectable", "Immunesystem", "Vaginalfluids", "Macrophages", "Aware", "Intercourse", "Semen", "Antibody", "Syringe", "Breastmilk", "Blood", "Sex", "Condom", "Tcell", "Prep", "Aids", "Injection", "Measures"].map(word => WordFindGame.insertWordBefore($('#add-word').parent(), word));
 	/* Init */
 	function recreate() {
 		$('#result-message').removeClass();
