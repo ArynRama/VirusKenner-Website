@@ -250,28 +250,7 @@
         $('input.word').removeClass('wordFound');
 
         // Class properties, game initial config:
-        wordList = [
-            "Immunodeficiency",
-            "Infection",
-            "Transmission",
-            "Immunesystem",
-            "Vaginalfluids",
-            "Macrophages",
-            "Aware",
-            "Intercourse",
-            "Semen",
-            "Antibody",
-            "Syringe",
-            "Breastmilk",
-            "Blood",
-            "Sex",
-            "Condom",
-            "Hypertcells",
-            "Prep",
-            "Aids",
-            "Injection",
-            "Measures"
-        ];
+        wordList = ["Immunodeficiency", "Infection", "Transmission", "Pep", "Undetectable", "Immunesystem", "Vaginalfluids", "Macrophages", "Aware", "Intercourse", "Semen", "Antibody", "Syringe", "Breastmilk", "Blood", "Sex", "Condom", "Tcell", "Prep", "Aids", "Injection", "Measures"];
         puzzle = wordfind.newPuzzleLax(wordList, options);
 
         // Draw all of the words
