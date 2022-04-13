@@ -18,6 +18,10 @@ h1 {
   padding: 3vw;
 }
 
+.found {
+	z-index: 3;
+}
+
 #puzzle > div { /* rows */
   width: 100%;
   margin: 0 auto;
@@ -110,7 +114,7 @@ button::-moz-focus-inner {
 	position: absolute;
 	right: 5%;
 	top: 5%;
-	height: 44%;
+	height: 2vh;
 	min-height: 275px;
 }
 
